@@ -1,4 +1,4 @@
-const CACHE_NAME = 'prisma-core-v1';
+const CACHE_NAME = 'prisma-core-v2';
 const urlsToCache = [
   './',
   './index.html',
@@ -42,4 +42,5 @@ self.addEventListener('activate', event => {
       );
     })
   );
+
 });
