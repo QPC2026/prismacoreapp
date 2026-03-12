@@ -1,0 +1,22 @@
+{
+  "name": "QPC | Prisma Core Technology",
+  "short_name": "Prisma Core",
+  "description": "Sistemas de Ingeniería Molecular - QPC",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0a1628",
+  "theme_color": "#00e5ff",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+]
+}
