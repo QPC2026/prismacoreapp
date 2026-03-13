@@ -6,7 +6,7 @@
     
     <title>PRISMA CORE | Sistemas de Ingeniería Molecular</title>
     
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="./manifest.json">
     <meta name="theme-color" content="#0a1628">
     <meta name="apple-mobile-web-app-title" content="Prisma Core">
     <meta name="application-name" content="Prisma Core">
@@ -17,7 +17,9 @@
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Syncopate..." as="style">
     <script src="https://cdn.tailwindcss.com"></script>
     
-    </head>    
+    <base target="_blank">
+<base target="_blank">
+</head>    
     <style>
         :root { 
             --cobalt: #0a1628; 
@@ -209,6 +211,8 @@
             <nav class="hidden md:flex gap-6 text-sm font-medium" aria-label="Navegación principal">
                 <a href="#acabados" class="hover:text-cyan-400 transition-colors" data-i18n="nav.acabados">ACABADOS</a>
                 <a href="#juntas" class="hover:text-cyan-400 transition-colors" data-i18n="nav.juntas">JUNTAS</a>
+                <a href="#revestimientos" class="hover:text-cyan-400 transition-colors" data-i18n="nav.revestimientos">REVESTIMIENTOS</a>
+                <a href="#sellado" class="hover:text-cyan-400 transition-colors" data-i18n="nav.sellado">SELLADO</a>
                 <a href="#cemento" class="hover:text-cyan-400 transition-colors" data-i18n="nav.cemento">CEMENTO</a>
                 <a href="#potenciadores" class="hover:text-cyan-400 transition-colors" data-i18n="nav.potenciadores">POTENCIADORES</a>
                 <a href="#tecnologia" class="hover:text-cyan-400 transition-colors" data-i18n="nav.tecnologia">TECNOLOGÍA</a>
@@ -270,9 +274,9 @@
         <div class="text-center mb-16">
             <span class="font-syncopate text-6xl text-cyan-400/20 font-bold block mb-4">00</span>
             <h2 class="font-syncopate text-3xl md:text-4xl font-bold text-metallic mb-4">
-                NACIDO EN MARGARITA,<br>PROBADO POR EL CARIBE
+                FABRICADO EN MARGARITA,<br>PARA TODO EL CARIBE
             </h2>
-            <p class="text-slate-500 tracking-widest text-sm">EL PROBLEMA QUE <strong>PRISMA CORE</strong> RESUELVE</p>
+            <p class="text-slate-500 tracking-widest text-sm">TODO LO QUE <strong>PRISMA CORE</strong> RESUELVE</p>
         </div>
 
         <!-- Narrativa en 3 partes -->
@@ -282,7 +286,7 @@
                 <div class="absolute -top-6 left-8 w-12 h-12 bg-red-400 rounded-full flex items-center justify-center text-white text-2xl shadow-lg">
                     ⚠️
                 </div>
-                <h3 class="font-syncopate text-xl font-bold text-slate-800 mt-4 mb-4">EL DOLOR REAL</h3>
+                <h3 class="font-syncopate text-xl font-bold text-slate-800 mt-4 mb-4">EL DATO</h3>
                 <p class="text-slate-600 text-sm leading-relaxed mb-4">
                     En el Caribe, el <strong>20-40% del costo de construcción</strong> se diluye en mantenimiento por humedad y salitre. Estructuras deben ser pintadas con frecuencia. Abundan unidades con acero de refuerzo expuesto.
                 </p>
@@ -296,7 +300,7 @@
                 <div class="absolute -top-6 left-8 w-12 h-12 bg-cyan-400 rounded-full flex items-center justify-center text-white text-2xl shadow-lg">
                     💡
                 </div>
-                <h3 class="font-syncopate text-xl font-bold text-slate-800 mt-4 mb-4">EL INSIGHT</h3>
+                <h3 class="font-syncopate text-xl font-bold text-slate-800 mt-4 mb-4">LA VISION</h3>
                 <p class="text-slate-600 text-sm leading-relaxed mb-4">
                     No es el agua. No es el salitre. Es la <strong>falta de fusión molecular</strong>. Mientras la industria vende capas que se desprenden, nosotros creamos unión molecular permanente entre viejo y nuevo material.
                 </p>
@@ -333,7 +337,7 @@
                 </div>
                 <div class="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
                     <span class="text-cyan-400 text-2xl">02</span>
-                    <p class="text-sm text-slate-300">El salitre no debería destruir sueños empresariales</p>
+                    <p class="text-sm text-slate-300">El salitre bien tratado, no debería destruir estructuras</p>
                 </div>
                 <div class="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
                     <span class="text-cyan-400 text-2xl">03</span>
@@ -341,11 +345,11 @@
                 </div>
                 <div class="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
                     <span class="text-cyan-400 text-2xl">04</span>
-                    <p class="text-sm text-slate-300">La nanotecnología no es lujo, es necesidad en el trópico</p>
+                    <p class="text-sm text-slate-300">La nanotecnología no es lujo, es necesidad en el Caribe</p>
                 </div>
                 <div class="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
                     <span class="text-cyan-400 text-2xl">05</span>
-                    <p class="text-sm text-slate-300">Margarita puede ser el Silicon Valley de la construcción resiliente</p>
+                    <p class="text-sm text-slate-300">Margarita puede ser el líder de la construcción resiliente</p>
                 </div>
                 <div class="flex items-start gap-4 p-4 bg-white/5 rounded-xl border border-cyan-400/30 bg-cyan-400/10">
                     <span class="text-cyan-400 text-2xl">06</span>
@@ -357,7 +361,7 @@
         <!-- CTA Contextual -->
         <div class="mt-12 text-center">
             <p class="text-slate-600 mb-6 max-w-2xl mx-auto">
-                Mientras la región invierte <strong>$4.2B en residencial</strong> y <strong>$3.8B en turismo</strong>, nosotros resolvemos el problema que nadie ve: la durabilidad molecular.
+                Mientras la región invierte <strong>$4.2B en residencial</strong> y <strong>$3.8B en turismo</strong>, nosotros resolvemos el problema que nadie ve: <strong>La durabilidad molecular.</strong>
             </p>
             <a href="#tecnologia" class="inline-flex items-center gap-2 text-cyan-600 font-bold hover:text-cyan-700 transition-colors">
                 DESCUBRE LA TECNOLOGÍA 
@@ -482,12 +486,12 @@
                     </div>
                     <h3 class="font-syncopate text-3xl font-bold text-metallic mb-4" data-i18n="acabados.ultra.titulo">ULTRA BASE COAT</h3>
                     <p class="text-slate-600 mb-6 leading-relaxed" data-i18n="acabados.ultra.desc">
-                        El yeso que conocías, pero mejorado con <strong>Prisma Core</strong>. Diseñado especialmente para estructuras cerca del mar o lugares húmedos.
+                        El yeso que conocías, pero mejorado con <strong>Prisma Core</strong>. Diseñado especialmente para estructuras cerca del mar o lugares húmedos del Caríbe.
                     </p>
                     
                     <div class="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-lg mb-6">
                         <p class="text-sm text-amber-800 font-semibold mb-1">Listo para usar</p>
-                        <p class="text-xs text-amber-700"><strong>Solo agrega agua.</strong> Todo está en la fórmula Prisma Core.</p>
+                        <p class="text-xs text-amber-700"><strong>Mezcla con agua.</strong> Todo está en la fórmula Prisma Core.</p>
                     </div>
 
                     <div class="bg-slate-50 rounded-xl p-6 border-l-4 border-cyan-400">
@@ -548,7 +552,7 @@
             <div class="grid md:grid-cols-2 gap-8 mb-8">
                 <div>
                     <p class="text-slate-600 mb-6" data-i18n="juntas.desc">
-                        El <strong>Careteo</strong> es el sellador de juntas que no solo rellena, protege. Con <strong>Prisma Core</strong>, las juntas de tus pisos y paredes se vuelven impermeables y antibacteriales. Ideal para baños, cocinas, piscinas y áreas de alto tráfico que necesitan máxima higiene.
+                        El <strong>Careteo Prisma Core</strong> Es nuestra fórmula de matriz cerrada para uso residencial y comercial de alto tráfico y condiciones extremas, que supera la norma en adherencia y repelencia al agua. Es el sellador de juntas que no solo rellena, protege las juntas de pisos y paredes, las hace impermeables (hidrofibicas) y antibacteriales. Ideal para baños, cocinas, piscinas y áreas de alto tráfico que requieren máxima higiene.
                     </p>
                     <div class="bg-slate-50 rounded-xl p-4">
                         <img src="https://kimi-web-img.moonshot.cn/img/www.thespruce.com/746629ebfcfeec0432f866166d0a18ce1a90f266.jpg" 
@@ -579,7 +583,7 @@
                 </div>
             </div>
 
-            <h3 class="font-syncopate text-xl font-bold text-slate-800 mb-6" data-i18n="juntas.colores.titulo">COLORES DISPONIBLES</h3>
+            <h3 class="font-syncopate text-xl font-bold text-slate-800 mb-6" data-i18n="juntas.colores.titulo">COLORES DISPONIBLES (Imagenes referenciales)</h3>
             
             <!-- LOS 6 COLORES COMPLETOS -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -631,32 +635,228 @@
                     <span class="tech-badge px-2 py-1 rounded text-xs">PRISMA CORE</span>
                 </div>
             </div>
+ </section>
 
-                <!-- ULTRA COLOR FINISH -->
-                <div class="mt-12 bg-gradient-to-r from-cyan-50 to-blue-50 rounded-2xl p-8 border border-cyan-200">
-                    <div class="grid md:grid-cols-2 gap-8 items-center">
-                        <div>
-                            <div class="inline-block px-3 py-1 bg-cyan-400 text-white rounded-full text-xs font-bold tracking-wider mb-4">NUEVO</div>
-                            <h3 class="font-syncopate text-2xl font-bold text-metallic mb-4">ULTRA COLOR FINISH</h3>
-                            <p class="text-slate-600 mb-4">
-                                ¿Te imaginas una pared que <strong>es</strong> de color, pero que <strong>no</strong> está pintada? Eso es Ultra Color Finish. Un estuco mineral pigmentado con propiedades Nano-hidrofobicas y de alta protección UV <strong>Prisma Core</strong> que se funde con tu pared creando un monolito de color eterno.
-                            </p>
-                            <div class="flex gap-2 flex-wrap">
+<div class="h-2 bg-gradient-to-r from-transparent via-cyan-400 to-transparent max-w-6xl mx-auto"></div>
+
+<!-- ========================================== -->
+<!-- FASE 4: 03. REVESTIMIENTOS DE ALTA GAMA -->
+<!-- ========================================== -->
+<section id="revestimientos" class="py-20 px-4 bg-slate-50">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex items-center gap-4 mb-12">
+            <span class="font-syncopate text-6xl text-cyan-400/20 font-bold">03</span>
+            <div>
+                <h2 class="font-syncopate text-3xl font-bold text-metallic">REVESTIMIENTOS DE ALTA GAMA</h2>
+                <p class="text-slate-500 tracking-widest text-sm">FINALIZACIÓN MONOLÍTICA INTEGRAL</p>
+            </div>
+        </div>
+
+        <div class="product-card rounded-3xl p-8 md:p-12 mb-12 hover-lift border-2 border-cyan-400/30 bg-gradient-to-br from-white to-cyan-50/30">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-block px-4 py-2 bg-cyan-400 text-white rounded-full text-xs font-bold tracking-wider mb-6">
+                        SISTEMA DE FUSIÓN MOLECULAR
+                    <div class="flex gap-2 flex-wrap">
+
                                 <span class="px-3 py-1 bg-white rounded-full text-xs text-slate-600">Fachadas modernas</span>
                                 <span class="px-3 py-1 bg-white rounded-full text-xs text-slate-600">Piscinas</span>
                                 <span class="px-3 py-1 bg-white rounded-full text-xs text-slate-600">Interiores de diseño</span>
                             </div>
+                    </div>
+                    <h3 class="font-syncopate text-4xl font-bold text-metallic mb-4">ULTRA COLOR FINISH</h3>
+                    <p class="text-lg text-cyan-600 font-semibold mb-6">¿Te imaginas una pared que <strong>es</strong> de color, pero que <strong>no</strong> está pintada? Eso es Ultra Color Finish. Un estuco mineral pigmentado con propiedades Nano-hidrofobicas y de alta protección UV <strong>Prisma Core</strong> que se funde con tu pared creando un monolito de color eterno.</p>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start gap-3">
+                            <span class="text-cyan-500 text-xl">⚗️</span>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm">FUSIÓN MOLECULAR</h4>
+                                <p class="text-xs text-slate-600">No es una capa superficial. Es un revestimiento que penetra en los poros del sustrato para crear una sola pieza monolítica. El color nace desde adentro de la estructura.</p>
+                            </div>
                         </div>
-                        <div class="rounded-xl overflow-hidden">
-                            <img src="https://kimi-web-img.moonshot.cn/img/archello.s3.eu-central-1.amazonaws.com/0e4a19799b51eca7f73abd7ed7b4daabd041a326.jpg" 
-                                 alt="Fachada con estuco mineral" 
-                                 class="w-full h-64 object-cover"
-                                 loading="lazy">
+                        <div class="flex items-start gap-3">
+                            <span class="text-cyan-500 text-xl">🛡️</span>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm">BARRERA INERTE</h4>
+                                <p class="text-xs text-slate-600">A diferencia de acabados orgánicos que se degradan, es inerte ante rayos UV y cristalización salina. Autolimpieza natural y resistencia hidrofóbica por décadas.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-cyan-500 text-xl">💨</span>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm">TOTALMENTE TRANSPIRABLE</h4>
+                                <p class="text-xs text-slate-600">Permite que la estructura "respire" pero no deja pasar el agua. Ultra-flexible para absorber micro-fisuras con dureza superficial grado industrial.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-cyan-100 rounded-xl p-4 border-l-4 border-cyan-400">
+                        <p class="text-sm text-cyan-800 font-semibold italic">
+                            "No es una capa que se aplica encima. Es una integración química que convierte el acabado y el muro en un solo cuerpo monolítico."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-br from-cyan-400/20 to-blue-600/20 rounded-2xl blur-2xl"></div>
+                    <div class="relative bg-slate-100 rounded-2xl overflow-hidden border-2 border-slate-200 h-full min-h-[400px]">
+                        <img src="https://kimi-web-img.moonshot.cn/img/archello.s3.eu-central-1.amazonaws.com/0e4a19799b51eca7f73abd7ed7b4daabd041a326.jpg" 
+                             alt="Ultra Color Finish - Revestimiento monolítico" 
+                             class="w-full h-full object-cover"
+                             loading="lazy">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900/90 to-transparent p-6">
+                            <p class="text-white font-semibold">Acabado monolítico integrado</p>
+                            <p class="text-slate-300 text-sm">Color que nace desde la estructura</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="grid md:grid-cols-4 gap-6 mb-12">
+            <div class="bg-white rounded-2xl p-6 text-center shadow-lg border border-slate-200">
+                <div class="w-12 h-12 bg-cyan-400/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <span class="text-cyan-600 text-2xl">🔬</span>
+                </div>
+                <h4 class="font-bold text-slate-800 text-sm mb-2">FUSIÓN MOLECULAR</h4>
+                <p class="text-xs text-slate-600">Integración química con el sustrato</p>
+            </div>
+            <div class="bg-white rounded-2xl p-6 text-center shadow-lg border border-slate-200">
+                <div class="w-12 h-12 bg-cyan-400/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <span class="text-cyan-600 text-2xl">☀️</span>
+                </div>
+                <h4 class="font-bold text-slate-800 text-sm mb-2">RESISTENCIA UV</h4>
+                <p class="text-xs text-slate-600">Inerte a la degradación solar</p>
+            </div>
+            <div class="bg-white rounded-2xl p-6 text-center shadow-lg border border-slate-200">
+                <div class="w-12 h-12 bg-cyan-400/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <span class="text-cyan-600 text-2xl">💧</span>
+                </div>
+                <h4 class="font-bold text-slate-800 text-sm mb-2">AUTOLIMPIEZA</h4>
+                <p class="text-xs text-slate-600">Efecto hidrofóbico natural</p>
+            </div>
+            <div class="bg-white rounded-2xl p-6 text-center shadow-lg border border-slate-200">
+                <div class="w-12 h-12 bg-cyan-400/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <span class="text-cyan-600 text-2xl">🏗️</span>
+                </div>
+                <h4 class="font-bold text-slate-800 text-sm mb-2">DUREZA INDUSTRIAL</h4>
+                <p class="text-xs text-slate-600">Resistencia grado industrial</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="h-2 bg-gradient-to-r from-transparent via-cyan-400 to-transparent max-w-6xl mx-auto"></div>
+
+<!-- ========================================== -->
+<!-- FASE 5: 04. SELLADO DE ALTA PRECISIÓN -->
+<!-- ========================================== -->
+<section id="sellado" class="py-20 px-4 bg-slate-50">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex items-center gap-4 mb-12">
+            <span class="font-syncopate text-6xl text-cyan-400/20 font-bold">04</span>
+            <div>
+                <h2 class="font-syncopate text-3xl font-bold text-metallic">SELLADO DE ALTA PRECISIÓN</h2>
+                <p class="text-slate-500 tracking-widest text-sm">FUSIBLE ESTRUCTURAL ANTI-DEGRADANTE</p>
+            </div>
+        </div>
+
+        <!-- Producto: CARETEO ULTRA 888 -->
+        <div class="product-card rounded-3xl p-8 md:p-12 mb-12 hover-lift border-2 border-cyan-400/30 bg-gradient-to-br from-white to-cyan-50/30">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-block px-4 py-2 bg-cyan-400 text-white rounded-full text-xs font-bold tracking-wider mb-6">
+                        SISTEMA DE JUNTAS TÉCNICAS
+                    </div>
+                    <h3 class="font-syncopate text-4xl font-bold text-metallic mb-4">CARETEO ULTRA 888</h3>
+                    <p class="text-lg text-cyan-600 font-semibold mb-6">Sellado técnico de juntas para revestimientos cerámicos, porcelanatos y piedras naturales en condiciones de inmersión o alta humedad.</p>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start gap-3">
+                            <span class="text-cyan-500 text-xl">🎯</span>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm">MISIÓN</h4>
+                                <p class="text-xs text-slate-600">Sellado técnico de juntas para revestimientos cerámicos, porcelanatos y piedras naturales en condiciones de inmersión o alta humedad.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-cyan-500 text-xl">⚡</span>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm">DIFERENCIAL</h4>
+                                <p class="text-xs text-slate-600">Formulado con nanopolímeros de matriz densa que eliminan la porosidad. A diferencia de las juntas comunes que se agrietan y permiten filtraciones, el Ultra 888 mantiene una flexibilidad controlada que absorbe los movimientos estructurales sin desprenderse.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-cyan-500 text-xl">🛡️</span>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm">FACTOR PRISMA CORE</h4>
+                                <p class="text-xs text-slate-600">Resistencia bacteriostática total (impide hongos y moho), inmune a químicos de limpieza y cloruros en piscinas.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-cyan-500 text-xl">✨</span>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm">ACABADO</h4>
+                                <p class="text-xs text-slate-600">Textura ultra-fina tipo seda, disponible en gama de colores arquitectónicos Prisma Core.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-cyan-100 rounded-xl p-4 border-l-4 border-cyan-400">
+                        <p class="text-sm text-cyan-800 font-semibold italic">
+                            "No es un relleno; es un componente de blindaje elástico diseñado para interceptar y anular agentes degradantes antes de que alcancen la estructura."
+                        </p>
+                    </div>
+                </div>
+
+                 <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-br from-cyan-400/20 to-blue-600/20 rounded-2xl blur-2xl"></div>
+                    <div class="relative bg-slate-100 rounded-2xl overflow-hidden border-2 border-slate-200 h-full min-h-[400px] flex items-center justify-center">
+                        <div class="text-center p-8">
+                            <div class="w-32 h-32 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center shadow-2xl">
+                                <span class="text-white font-syncopate text-5xl font-bold">888</span>
+                            </div>
+                            <p class="text-slate-600 font-semibold">CARETEO ULTRA 888</p>
+                            <p class="text-slate-400 text-sm">Nanopolímeros de matriz densa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grid de propiedades técnicas (4 items) -->
+        <div class="grid md:grid-cols-4 gap-6">
+            <div class="bg-white rounded-2xl p-6 text-center shadow-lg border border-slate-200 hover-lift">
+                <div class="w-12 h-12 bg-cyan-400/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <span class="text-cyan-600 text-2xl">🔬</span>
+                </div>
+                <h4 class="font-bold text-slate-800 text-sm mb-2">NANOPOLÍMEROS DE MATRIZ DENSA</h4>
+                <p class="text-xs text-slate-600">Eliminación total de porosidad</p>
+            </div>
+            <div class="bg-white rounded-2xl p-6 text-center shadow-lg border border-slate-200 hover-lift">
+                <div class="w-12 h-12 bg-cyan-400/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <span class="text-cyan-600 text-2xl">🛡️</span>
+                </div>
+                <h4 class="font-bold text-slate-800 text-sm mb-2">FLEXIBILIDAD CONTROLADA</h4>
+                <p class="text-xs text-slate-600">Absorbe movimientos estructurales</p>
+            </div>
+            <div class="bg-white rounded-2xl p-6 text-center shadow-lg border border-slate-200 hover-lift">
+                <div class="w-12 h-12 bg-cyan-400/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <span class="text-cyan-600 text-2xl">🦠</span>
+                </div>
+                <h4 class="font-bold text-slate-800 text-sm mb-2">RESISTENCIA BACTERIOSTÁTICA</h4>
+                <p class="text-xs text-slate-600">Impide hongos y moho</p>
+            </div>
+            <div class="bg-white rounded-2xl p-6 text-center shadow-lg border border-slate-200 hover-lift">
+                <div class="w-12 h-12 bg-cyan-400/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <span class="text-cyan-600 text-2xl">💧</span>
+                </div>
+                <h4 class="font-bold text-slate-800 text-sm mb-2">INMUNE A CLORUROS</h4>
+                <p class="text-xs text-slate-600">Resistente a químicos de piscinas</p>
+            </div>
+        </div>
+    </div>
 </section>
 
 <div class="h-2 bg-gradient-to-r from-transparent via-cyan-400 to-transparent max-w-6xl mx-auto"></div>
@@ -665,14 +865,90 @@
 <section id="cemento" class="py-20 px-4">
     <div class="max-w-7xl mx-auto">
         <div class="flex items-center gap-4 mb-12">
-            <span class="font-syncopate text-6xl text-cyan-400/20 font-bold">03</span>
+            <span class="font-syncopate text-6xl text-cyan-400/20 font-bold">05</span>
             <div>
                 <h2 class="font-syncopate text-3xl font-bold text-metallic" data-i18n="cemento.titulo">SISTEMA CEMENTOSO</h2>
                 <p class="text-slate-500 tracking-widest text-sm" data-i18n="cemento.subtitulo">INGENIERÍA ESTRUCTURAL MOLECULAR</p>
             </div>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8">
+                <!-- 01. BLINDAJE Y PREPARACIÓN -->
+        <div class="mb-16">
+            <div class="flex items-center gap-4 mb-8">
+                <span class="font-syncopate text-5xl text-cyan-400/20 font-bold">01</span>
+                <div>
+                    <h3 class="font-syncopate text-2xl font-bold text-metallic">BLINDAJE Y PREPARACIÓN</h3>
+                    <p class="text-slate-500 tracking-widest text-sm">PROTECCIÓN MOLECULAR AVANZADA</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- ULTRA PRIMER V3 -->
+                <div class="product-card rounded-3xl p-6 hover-lift border-t-4 border-cyan-400">
+                    <div class="inline-block px-3 py-1 bg-cyan-400/10 text-cyan-600 rounded-full text-xs font-bold tracking-wider mb-4">
+                        PROTECCIÓN ANTICORROSIVA MOLECULAR
+                    </div>
+                    <h3 class="font-syncopate text-xl font-bold text-metallic mb-2">ULTRA PRIMER V3</h3>
+                    <p class="text-xs text-cyan-600 font-bold tracking-wider mb-4">PRIMER DE ALTA RESISTENCIA</p>
+                    <div class="mb-4 rounded-xl overflow-hidden bg-slate-100 h-40 flex items-center justify-center">
+                        <svg width="80" height="80" viewBox="0 0 100 100" class="text-cyan-400">
+                            <circle cx="50" cy="50" r="40" fill="none" stroke="currentColor" stroke-width="3"/>
+                            <path d="M30,50 L45,65 L70,35" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <p class="text-slate-600 mb-4 text-sm leading-relaxed">
+                        Protección de aceros/cabillas a la intemperie. Pasivado molecular que anula la oxidación desde la raíz, superando en durabilidad a cualquier cromato o fosfatizante comercial.
+                    </p>
+                    <div class="bg-cyan-50 rounded-xl p-3 border border-cyan-200">
+                        <p class="text-xs text-cyan-700 font-semibold">✓ Sustituye fondos anticorrosivos tradicionales</p>
+                    </div>
+                </div>
+
+                <!-- ULTRA PASIVADOR -->
+                <div class="product-card rounded-3xl p-6 hover-lift border-t-4 border-emerald-400">
+                    <div class="inline-block px-3 py-1 bg-emerald-400/10 text-emerald-600 rounded-full text-xs font-bold tracking-wider mb-4">
+                        MANTENIMIENTO PREVENTIVO
+                    </div>
+                    <h3 class="font-syncopate text-xl font-bold text-metallic mb-2">ULTRA PASIVADOR</h3>
+                    <p class="text-xs text-emerald-600 font-bold tracking-wider mb-4">SANEAMIENTO DE ÓXIDO</p>
+                    <div class="mb-4 rounded-xl overflow-hidden bg-slate-100 h-40 flex items-center justify-center">
+                        <svg width="80" height="80" viewBox="0 0 100 100" class="text-emerald-400">
+                            <path d="M20,50 Q35,20 50,50 T80,50" fill="none" stroke="currentColor" stroke-width="3"/>
+                            <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="5,5"/>
+                        </svg>
+                    </div>
+                    <p class="text-slate-600 mb-4 text-sm leading-relaxed">
+                        Saneamiento de óxido y mantenimiento de herrería. Disponible en presentaciones de 500ml con aspersor para mantenimiento inmediato de portones y herramientas expuestas al salitre.
+                    </p>
+                    <div class="bg-emerald-50 rounded-xl p-3 border border-emerald-200">
+                        <p class="text-xs text-emerald-700 font-semibold">✓ Adquirible por separado</p>
+                    </div>
+                </div>
+
+                <!-- ACTIVADOR CORE -->
+                <div class="product-card rounded-3xl p-6 hover-lift border-t-4 border-purple-400">
+                    <div class="inline-block px-3 py-1 bg-purple-400/10 text-purple-600 rounded-full text-xs font-bold tracking-wider mb-4">
+                        TRANSFORMADOR DE RENDIMIENTO
+                    </div>
+                    <h3 class="font-syncopate text-xl font-bold text-metallic mb-2">ACTIVADOR CORE</h3>
+                    <p class="text-xs text-purple-600 font-bold tracking-wider mb-4">COMPONENTE B V3</p>
+                    <div class="mb-4 rounded-xl overflow-hidden bg-slate-100 h-40 flex items-center justify-center">
+                        <svg width="80" height="80" viewBox="0 0 100 100" class="text-purple-400">
+                            <polygon points="50,10 90,90 10,90" fill="none" stroke="currentColor" stroke-width="3"/>
+                            <circle cx="50" cy="55" r="15" fill="currentColor" opacity="0.3"/>
+                        </svg>
+                    </div>
+                    <p class="text-slate-600 mb-4 text-sm leading-relaxed">
+                        Componente B para transformar morteros manuales a autonivelantes. Activa el sistema V3 para convertir morteros base en autonivelantes de alta fluidez.
+                    </p>
+                    <div class="bg-purple-50 rounded-xl p-3 border border-purple-200">
+                        <p class="text-xs text-purple-700 font-semibold">✓ Compatible con toda la línea</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div class="grid md:grid-cols-2 gap-8">
             <!-- ULTRA CEM-WHITE -->
             <div class="product-card rounded-3xl p-8 hover-lift">
                 <div class="inline-block px-3 py-1 bg-cyan-400/10 text-cyan-600 rounded-full text-xs font-bold tracking-wider mb-4">
@@ -693,6 +969,15 @@
                     <span class="px-3 py-1 bg-slate-100 rounded-full text-xs text-slate-600">Reparaciones visibles</span>
                     <span class="px-3 py-1 bg-slate-100 rounded-full text-xs text-slate-600">Porcelanato blanco</span>
                 </div>
+</p>
+                <div class="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-lg mb-4">
+                    <h5 class="font-bold text-amber-800 text-xs mb-1">NOTA DE INGENIERÍA</h5>
+                    <p class="text-xs text-amber-700">Pureza y Blancura Grado Arquitectónico, Control de Contracción (Cero Fisuras), Matriz Hidrofóbica (Baja Absorción), Adherencia Molecular (Cero Desprendimientos), Resistencia a la Refracción Solar</p>
+                </div>
+                <div class="bg-cyan-50 rounded-xl p-4 mb-6 border border-cyan-200">
+                    <h4 class="font-bold text-cyan-800 mb-2 text-sm">CLAVE DIFERENCIADORA</h4>
+                    <p class="text-xs text-cyan-700">Al usar nuestro sistema, está invirtiendo en una Matriz de Ingeniería que elimina la porosidad, resiste el salitre y garantiza que el blanco se mantenga blanco, ahorrándole costos de mantenimiento a largo plazo.</p>
+                </div>
             </div>
 
             <!-- GRIS ULTRA -->
@@ -710,9 +995,13 @@
                         TIXOTROPÍA NANO
                     </div>
                 </div>
-                <p class="text-slate-600 mb-6 text-sm leading-relaxed">
+                <p class="text-slate-600 mb-4 text-sm leading-relaxed">
                     <strong>Inmunidad estructural mediante nanotecnología.</strong> No vendemos sacos, vendemos adherencia molecular total.
                 </p>
+                <div class="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-lg mb-4">
+                    <h5 class="font-bold text-amber-800 text-xs mb-1">NOTA DE INGENIERÍA</h5>
+                    <p class="text-xs text-amber-700">Mortero base de aplicación manual. Su comportamiento se transforma en Autonivelante de alta fluidez al ser activado con el ULTRA CORE V3.</p>
+                </div>
                 <div class="bg-cyan-50 rounded-xl p-4 mb-6 border border-cyan-200">
                     <h4 class="font-bold text-cyan-800 mb-2 text-sm">PROPIEDAD MOLECULAR CLAVE</h4>
                     <p class="text-xs text-cyan-700">Tixotropía de grado nano: se mantiene firme en superficies verticales y techos.</p>
@@ -722,7 +1011,7 @@
         <!-- SISTEMA DE RECUPERACIÓN ESTRUCTURAL HD -->
         <div class="mt-16">
             <div class="flex items-center gap-4 mb-8">
-                <span class="font-syncopate text-5xl text-cyan-400/20 font-bold">03.1</span>
+                <span class="font-syncopate text-5xl text-cyan-400/20 font-bold">05.1</span>
                 <div>
                     <h3 class="font-syncopate text-2xl font-bold text-metallic" data-i18n="hd.titulo">SISTEMA DE RECUPERACIÓN ESTRUCTURAL HD</h3>
                     <p class="text-slate-500 tracking-widest text-sm">FÁCIL APLICACIÓN DE INGENIERÍA EN 3 PASOS</p>
@@ -740,7 +1029,7 @@
                             </div>
                             <h4 class="font-syncopate text-3xl font-bold mb-4">Recuperación de Elementos Estructurales</h4>
                             <p class="text-slate-300 leading-relaxed mb-6">
-                                Cuando el óxido ataca el acero de refuerzo, la estructura pierde su alma. Este sistema de <strong>ingeniería molecular en 3 pasos</strong> no solo repara: <span class="text-cyan-400">reconstruye la inmunidad estructural</span> del elemento desde su núcleo metálico.
+                                Cuando el óxido ataca el acero de refuerzo, la estructura pierde su alma. Este sistema de <strong>ingeniería molecular en 3 pasos</strong> no solo repara: <span class="text-cyan-400">reconstruye la inmunidad estructural</span> del elemento desde su núcleo metálico. Efectivo en la erradicación de hongo y moho en estructuras degradadas.
                             </p>
                         </div>
                         <div class="rounded-2xl overflow-hidden border-2 border-cyan-400/30">
@@ -786,7 +1075,7 @@
         <!-- SISTEMA ULTRA HONGO KILLER -->
         <div class="mt-16">
             <div class="flex items-center gap-4 mb-8">
-                <span class="font-syncopate text-5xl text-emerald-400/20 font-bold">03.2</span>
+                <span class="font-syncopate text-5xl text-emerald-400/20 font-bold">05.2</span>
                 <div>
                     <h3 class="font-syncopate text-2xl font-bold text-metallic" data-i18n="hongo.titulo">SISTEMA ULTRA HONGO KILLER</h3>
                     <p class="text-slate-500 tracking-widest text-sm">BIO-MATRIX MOLECULAR SHIELD</p>
@@ -861,7 +1150,7 @@
 <section id="potenciadores" class="py-20 px-4 bg-slate-50">
     <div class="max-w-7xl mx-auto">
         <div class="flex items-center gap-4 mb-12">
-            <span class="font-syncopate text-6xl text-cyan-400/20 font-bold">04</span>
+            <span class="font-syncopate text-6xl text-cyan-400/20 font-bold">06</span>
             <div>
                 <h2 class="font-syncopate text-3xl font-bold text-metallic" data-i18n="potenciadores.titulo">POTENCIADORES ULTRA</h2>
                 <p class="text-slate-500 tracking-widest text-sm" data-i18n="potenciadores.subtitulo">LLEVA TU PINTURA AL SIGUIENTE NIVEL</p>
@@ -927,7 +1216,7 @@
                 </div>
                 <div class="p-6">
                     <h3 class="font-syncopate text-xl font-bold text-metallic mb-2" data-i18n="potenciadores.nano.titulo">NANO BOOSTER</h3>
-                    <p class="text-sm text-slate-600 mb-4">Invisible pero poderoso. Protege piedras, ladrillos, paredes pintadas.</p>
+                    <p class="text-sm text-slate-600 mb-4">Invisible pero poderoso. Protege piedras, ladrillos, paredes pintadas. <strong>!El sucio, no se pega, el agua, se resbala!<strong></p>
                     <div class="bg-green-50 rounded-lg p-3 text-xs text-green-700">
                         <strong>Ideal para:</strong> Fachadas, piedras naturales, muros exteriores.
                     </div>
@@ -939,6 +1228,88 @@
 
 <div class="h-2 bg-gradient-to-r from-transparent via-cyan-400 to-transparent max-w-6xl mx-auto"></div>
 <!-- SECCIÓN INVERSORES -->
+<!-- SECCIÓN FAQ - CONSULTAS TÉCNICAS -->
+<section id="faq" class="py-20 px-4 bg-slate-50">
+    <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+            <span class="font-syncopate text-6xl text-cyan-400/20 font-bold block mb-4">?</span>
+            <h2 class="font-syncopate text-3xl font-bold text-metallic mb-4">CONSULTAS TÉCNICAS</h2>
+            <p class="text-slate-500 tracking-widest text-sm">RESPUESTAS A SUS PREGUNTAS PERSONALIZADAS POR WhatsApp</p>
+        </div>
+
+        <div class="space-y-6">
+            <!-- FAQ Item 1 -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-slate-200">
+                <h3 class="font-syncopate text-lg font-bold text-slate-800 mb-3 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-cyan-400 rounded-full flex items-center justify-center text-white text-sm">1</span>
+                    ¿El Ultra Primer V3 sustituye al fondo anticorrosivo tradicional?
+                </h3>
+                <div class="pl-11">
+                    <p class="text-slate-600 leading-relaxed">
+                        Sí. A diferencia de los fondos comunes, el V3 realiza un pasivado molecular que anula la oxidación desde la raíz, superando en durabilidad a cualquier cromato o fosfatizante comercial.
+                    </p>
+                </div>
+
+            <!-- FAQ Item 2 - Acabados -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-slate-200">
+                <h3 class="font-syncopate text-lg font-bold text-slate-800 mb-3 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-cyan-400 rounded-full flex items-center justify-center text-white text-sm">2</span>
+                    ¿Cuál es la diferencia entre el Ultra Color Finish y una pintura de alta calidad?
+                </h3>
+                <div class="pl-11">
+                    <p class="text-slate-600 leading-relaxed">
+                        La pintura es un polímero que se adhiere mecánicamente y termina por "ampollarse" debido a la presión del vapor o el salitre. El Ultra Color Finish es una integración química; se convierte en parte de la pared. No hay capa que se desprenda porque el acabado y el muro ahora son un solo cuerpo monolítico.
+                    </p>
+                </div>
+            </div>
+</div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-slate-200">
+                <h3 class="font-syncopate text-lg font-bold text-slate-800 mb-3 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-cyan-400 rounded-full flex items-center justify-center text-white text-sm">3</span>
+                    ¿Puedo adquirir el Ultra Pasivador por separado?
+                </h3>
+                <div class="pl-11">
+                    <p class="text-slate-600 leading-relaxed">
+                        Sí. Disponible en presentaciones de 500ml con aspersor para mantenimiento inmediato de portones y herramientas expuestas al salitre.
+                    </p>
+                </div>
+                        <!-- FAQ Item 4 - Careteo Ultra 888 -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-slate-200">
+                <h3 class="font-syncopate text-lg font-bold text-slate-800 mb-3 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-cyan-400 rounded-full flex items-center justify-center text-white text-sm">4</span>
+                    ¿Por qué el Careteo Ultra 888 no se mancha ni se cae en las piscinas?
+                </h3>
+                <div class="pl-11">
+                    <p class="text-slate-600 leading-relaxed">
+                        "Porque su estructura molecular es hidrofóbica y de baja absorción. Mientras los cementos de juntas tradicionales absorben agua y químicos que los disuelven, nuestra tecnología rechaza la humedad desde la superficie, manteniendo la integridad del color y el anclaje por años."
+                    </p>
+                </div>
+            </div>
+</div>
+        </div>
+<!-- FAQ Item 5 -->
+            <div class="bg-white rounded-2xl p-6 shadow-lg border border-slate-200">
+                <h3 class="font-syncopate text-lg font-bold text-slate-800 mb-3 flex items-center gap-3">
+                    <span class="w-8 h-8 bg-cyan-400 rounded-full flex items-center justify-center text-white text-sm">5</span>
+                    ¿Cuál es la diferencia entre el Careteo Prisma Core y el Careteo Ultra 888?
+                </h3>
+                <div class="pl-11">
+                    <p class="text-slate-600 leading-relaxed">
+                        La diferencia radica en la especialización de su matriz molecular. Nuestro Careteo estándar es un sistema de matriz cerrada diseñado para ofrecer alta adherencia y repelencia al agua en condiciones residenciales y comerciales de alto tráfico.
+
+Por otro lado, el Careteo Ultra 888 es un sistema de Matriz Densa Hidrofóbica desarrollado para condiciones críticas de inmersión total (piscinas) o exposición a químicos industriales. Debido a su formulación de alta gama, el Ultra 888 se suministra exclusivamente <strong>BAJO PEDIDO TÉCNICO</strong> y previa validación del proyecto.
+                    </p>
+                </div>
+            </div>
+</div>
+    </div>
+</section>
+
+<div class="h-2 bg-gradient-to-r from-transparent via-cyan-400 to-transparent max-w-6xl mx-auto"></div>
+
 <section id="inversion" class="py-20 px-4 bg-cobalt text-white">
     <div class="max-w-4xl mx-auto text-center">
         <img src="https://kimi-web-img.moonshot.cn/img/constructionexec.com/5a33aa3a3b87e1b8ec066907384664b142198c52.jpg" 
@@ -1441,5 +1812,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 </script></body>
-
 </html>
