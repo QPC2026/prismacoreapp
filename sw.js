@@ -1,4 +1,4 @@
-const CACHE_NAME = 'prisma-core-v5';
+const CACHE_NAME = 'prisma-core-v6';
 const urlsToCache = [
   './',
   './index.html',
