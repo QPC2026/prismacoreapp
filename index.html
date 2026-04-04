@@ -260,6 +260,34 @@
         @media (min-width: 768px) {
             .section-number { font-size: 6rem; }
         }
+.btn-share {
+    background: transparent;
+    color: var(--emerald-520);
+    border: 2px solid var(--emerald-520);
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px var(--emerald-glow);
+}
+
+.btn-share:hover {
+    background: var(--emerald-520);
+    color: #000;
+    box-shadow: 0 0 25px var(--emerald-520);
+    transform: scale(1.05);
+}
+
+.btn-share svg {
+    stroke: currentColor;
+}
     </style>
 </head>
 <body class="grid-bg">
@@ -317,11 +345,20 @@
             </div>
         </div>
     </header>
+<div style="text-align: center; margin: 20px 0;">
+    <button id="btnCompartir" class="btn-share">
+        <span>Compartir Catálogo</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="18" cy="5" r="3"></circle>
+            <circle cx="6" cy="12" r="3"></circle>
+            <circle cx="18" cy="19" r="3"></circle>
+            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+        </svg>
+    </button>
+</div>
 
     <!-- HERO -->
-    <button id="btnCompartir" class="btn-share">
-    Compartir Catálogo 🔗
-</button>
     <section class="relative bg-cobalt text-white py-20 px-4 overflow-hidden min-h-[70vh] flex items-center" aria-labelledby="hero-title">
         <canvas id="particles" aria-hidden="true"></canvas>
         <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, rgba(0,229,255,0.3) 1px, transparent 0); background-size: 30px 30px;"></div>
@@ -1305,7 +1342,7 @@
                                 </p>
                             </div>
                             <div class="rounded-2xl overflow-hidden border-2 border-emerald-400/30 relative">
-                                <img src="hongo_killer.png" 
+                                <img src="C:\Users\FERREMARKET\Desktop\QPC\IMAGENES\hongo_killer.png" 
                                      alt="Eliminación de algas" 
                                      class="w-full h-64 object-cover">
                                 <div class="absolute top-4 right-4">
@@ -2845,32 +2882,30 @@ function copyFicha(elementId) {
         });
     }
 }
-    document.getElementById('btnCompartir').addEventListener('click', async () => {
+</script>
+document.getElementById('btnCompartir').addEventListener('click', async () => {
+    // Verificamos si el navegador soporta la función de compartir
     if (navigator.share) {
         try {
             await navigator.share({
-                title: 'DIAMOND CORE - Catálogo Digital',
-                text: 'Te comparto las especificaciones de nuestro sistema fotoluminiscente.',
-                url: window.location.href // Toma la URL actual automáticamente
+                title: 'DIAMOND CORE | Sistema Fotoluminiscente',
+                text: 'Te comparto el catálogo técnico de Diamond Core. Innovación en alta visibilidad.',
+                url: window.location.href // Usa la URL real de tu GitHub Pages
             });
-            console.log('Compartido con éxito');
+            console.log('Catálogo compartido con éxito');
         } catch (error) {
-            console.log('Error al compartir:', error);
+            console.log('Error al intentar compartir:', error);
         }
     } else {
-        alert('Copia este enlace: ' + window.location.href);
+        // Opción de respaldo si el navegador no lo soporta (ej. en PC)
+        const dummy = document.createElement('input');
+        document.body.appendChild(dummy);
+        dummy.value = window.location.href;
+        dummy.select();
+        document.execCommand('copy');
+        document.body.removeChild(dummy);
+        alert('Enlace copiado al portapapeles. ¡Ya puedes pegarlo en WhatsApp!');
     }
 });
-    .btn-share {
-    background: var(--emerald-520); /* Usa el color verde de tu sistema */
-    color: black;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 20px 0;
-}
-</script>
 </body>
 </html>
