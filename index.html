@@ -28,6 +28,8 @@
             --amber: #f59e0b;
             --emerald: #10b981;
             --purple: #8b5cf6;
+            --emerald-520: #10b981;
+            --emerald-glow: rgba(16, 185, 129, 0.5);
         }
         
         * { box-sizing: border-box; }
@@ -260,34 +262,35 @@
         @media (min-width: 768px) {
             .section-number { font-size: 6rem; }
         }
-.btn-share {
-    background: transparent;
-    color: var(--emerald-520);
-    border: 2px solid var(--emerald-520);
-    padding: 12px 24px;
-    border-radius: 50px;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 15px var(--emerald-glow);
-}
 
-.btn-share:hover {
-    background: var(--emerald-520);
-    color: #000;
-    box-shadow: 0 0 25px var(--emerald-520);
-    transform: scale(1.05);
-}
+        .btn-share {
+            background: transparent;
+            color: var(--emerald-520);
+            border: 2px solid var(--emerald-520);
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-family: 'Syncopate', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px var(--emerald-glow);
+        }
 
-.btn-share svg {
-    stroke: currentColor;
-}
+        .btn-share:hover {
+            background: var(--emerald-520);
+            color: #000;
+            box-shadow: 0 0 25px var(--emerald-520);
+            transform: scale(1.05);
+        }
+
+        .btn-share svg {
+            stroke: currentColor;
+        }
     </style>
 </head>
 <body class="grid-bg">
@@ -329,7 +332,7 @@
                 <a href="#sellado" class="hover:text-cyan-400 transition-colors" data-i18n="nav.sellado">SELLADO</a>
                 <a href="#cemento" class="hover:text-cyan-400 transition-colors" data-i18n="nav.cemento">CEMENTO</a>
                 <a href="#potenciadores" class="hover:text-cyan-400 transition-colors" data-i18n="nav.potenciadores">POTENCIADORES</a>
-                <a href="#iluminacion" class="hover:text-cyan-400 transition-colors" data-i18n="nav.iluminacion">ESPECTRO</a>
+                <a href="#aditivos" class="hover:text-cyan-400 transition-colors" data-i18n="nav.aditivos">ADITIVOS</a>
                 <a href="#fichas-rapidas" class="hover:text-cyan-400 transition-colors font-semibold text-amber-400" data-i18n="nav.fichas">FICHAS</a>
                 <a href="#inversion" class="text-cyan-400 hover:text-white transition-colors font-semibold" data-i18n="nav.inversion">INVERSORES</a>
             </nav>
@@ -345,18 +348,19 @@
             </div>
         </div>
     </header>
-<div style="text-align: center; margin: 20px 0;">
-    <button id="btnCompartir" class="btn-share">
-        <span>Compartir Catálogo</span>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="18" cy="5" r="3"></circle>
-            <circle cx="6" cy="12" r="3"></circle>
-            <circle cx="18" cy="19" r="3"></circle>
-            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
-        </svg>
-    </button>
-</div>
+
+    <div style="text-align: center; margin: 20px 0;">
+        <button id="btnCompartir" class="btn-share">
+            <span data-i18n="share.text">Compartir Catálogo</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="18" cy="5" r="3"></circle>
+                <circle cx="6" cy="12" r="3"></circle>
+                <circle cx="18" cy="19" r="3"></circle>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+            </svg>
+        </button>
+    </div>
 
     <!-- HERO -->
     <section class="relative bg-cobalt text-white py-20 px-4 overflow-hidden min-h-[70vh] flex items-center" aria-labelledby="hero-title">
@@ -1362,15 +1366,15 @@
                 </div>
             </div>
 
-            <!-- SUB-BLOQUE 5.4: Hongo Killer (IMAGEN ACTUALIZADA) -->
-                  <div class="rounded-2xl overflow-hidden border-2 border-emerald-400/30 relative">
-                  <img src="https://kimi-web-img.moonshot.cn/img/www.porterscleaning.com/936b2e1d05f5902a120f4719259a30dc417793a8.jpg" 
-                  alt="Moho negro y algas en muro de concreto - Problema que resuelve Hongo Killer" 
-                  class="w-full h-64 object-cover hover:scale-105 transition-transform duration-700">
-           <div class="absolute top-4 right-4">
-        <span class="tech-badge-pill bg-emerald-500/90">BIO-MATRIX SHIELD</span>
-    </div>
-</div>
+            <!-- SUB-BLOQUE 5.4: Hongo Killer -->
+            <div class="mb-16">
+                <div class="flex items-end gap-4 mb-8">
+                    <span class="font-syncopate text-5xl text-cyan-400/20 font-bold">05.2</span>
+                    <div class="pb-1">
+                        <h3 class="font-syncopate text-2xl font-bold text-metallic" data-i18n="cemento.hongo.titulo">SISTEMA ULTRA HONGO KILLER</h3>
+                        <p class="text-slate-500 tracking-widest text-sm" data-i18n="cemento.hongo.sub">BIO-MATRIX MOLECULAR SHIELD</p>
+                    </div>
+                </div>
 
                 <div class="bg-gradient-to-br from-emerald-900 to-slate-900 rounded-3xl p-8 md:p-12 text-white relative overflow-hidden">
                     <div class="absolute top-0 right-0 w-96 h-96 bg-emerald-400/10 rounded-full blur-3xl"></div>
@@ -1390,9 +1394,9 @@
                                 </p>
                             </div>
                             <div class="rounded-2xl overflow-hidden border-2 border-emerald-400/30 relative">
-                                <img src="C:\Users\FERREMARKET\Desktop\QPC\IMAGENES\hongo_killer.png" 
-                                     alt="Eliminación de algas" 
-                                     class="w-full h-64 object-cover">
+                                <img src="https://kimi-web-img.moonshot.cn/img/www.porterscleaning.com/936b2e1d05f5902a120f4719259a30dc417793a8.jpg" 
+                                     alt="Moho negro y algas en muro de concreto - Problema que resuelve Hongo Killer" 
+                                     class="w-full h-64 object-cover hover:scale-105 transition-transform duration-700">
                                 <div class="absolute top-4 right-4">
                                     <span class="tech-badge-pill bg-emerald-500/90">BIO-MATRIX SHIELD</span>
                                 </div>
@@ -1556,12 +1560,294 @@
             </div>
         </div>
     </section>
+        <!-- SECCIÓN 07: SISTEMA DE ADITIVOS ULTRA -->
+    <section id="aditivos" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-end gap-4 mb-12">
+                <span class="section-number text-cyan-400">07</span>
+                <div class="pb-2">
+                    <h2 class="font-syncopate text-3xl font-bold text-metallic" data-i18n="aditivos.titulo">SISTEMA DE ADITIVOS ULTRA</h2>
+                    <p class="text-slate-500 tracking-widest text-sm" data-i18n="aditivos.subtitulo">INGREDIENTES SECRETOS DEL CONCRETO PERFECTO</p>
+                </div>
+            </div>
 
-   </section>
+            <!-- Banner Origen -->
+            <div class="bg-gradient-to-r from-cyan-600 to-blue-600 rounded-2xl p-6 mb-12 text-white relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+                <div class="relative z-10 flex items-center gap-4">
+                    <span class="text-4xl">🏝️</span>
+                    <div>
+                        <h3 class="font-syncopate text-xl font-bold" data-i18n="aditivos.banner.titulo">HECHO EN MARGARITA, VENEZUELA</h3>
+                        <p class="text-cyan-100" data-i18n="aditivos.banner.texto">Diseñados en el Caribe, para el Caribe. Resistencia máxima al salitre, humedad extrema y sol tropical.</p>
+                    </div>
+                </div>
+            </div>
+
+             <p class="text-slate-600 mb-12 max-w-3xl text-lg text-justify mx-auto leading-relaxed" data-i18n="aditivos.intro">
+                <strong>Aditivos químicos de alto desempeño</strong> que modifican las propiedades del concreto y mortero para máxima durabilidad en ambientes agresivos. Cada formulación resuelve un desafío específico: adherencia, impermeabilización, flexibilidad, curado óptimo o refuerzo estructural. Diseñados para soportar el ataque del salitre, la humedad extrema y la radiación UV tropical sin perder rendimiento.
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- 01: Ultra Bond V3 (Azul) -->
+                <div class="product-card rounded-3xl overflow-hidden hover-lift group border-t-4 border-blue-500">
+                    <div class="h-48 bg-gradient-to-br from-blue-500 to-blue-700 relative overflow-hidden flex items-center justify-center">
+                        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYtMi42ODYgNi02cy0yLjY4Ni02LTYtNi02IDIuNjg2LTYgNiAyLjY4NiA2IDYgNnptMCAwIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4xKSIvPjwvZz48L3N2Zz4=')] opacity-30"></div>
+                        <span class="text-6xl relative z-10">🔗</span>
+                        <div class="absolute top-4 right-4">
+                            <span class="tech-badge-pill bg-blue-400/90">BOND V3</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-2">
+                            <div class="w-3 h-3 rounded-full bg-blue-500"></div>
+                            <span class="text-xs font-bold text-blue-600 tracking-wider">AD-01</span>
+                        </div>
+                        <h3 class="font-syncopate text-xl font-bold text-metallic mb-1" data-i18n="aditivos.bond.titulo">ULTRA BOND V3</h3>
+                        <p class="text-xs text-blue-600 font-bold tracking-wider mb-4" data-i18n="aditivos.bond.sub">ADHERENCIA MOLECULAR TOTAL</p>
+                        
+                        <p class="text-sm text-slate-600 mb-4" data-i18n="aditivos.bond.desc">
+                            El <strong>pegamento molecular</strong> que hace que el nuevo concreto se una al viejo como si fueran uno solo. Elimina la delaminación.
+                        </p>
+                        
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center gap-2 text-xs text-slate-600">
+                                <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+                                <span data-i18n="aditivos.bond.f1">Puente de unión entre capas</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-600">
+                                <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+                                <span data-i18n="aditivos.bond.f2">Elimina el desprendimiento</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-600">
+                                <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+                                <span data-i18n="aditivos.bond.f3">Ideal para parches estructurales</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-blue-50 rounded-lg p-3 text-xs text-blue-700 mb-4">
+                            <strong data-i18n="aditivos.presentacion">Presentaciones:</strong> 
+                            <span data-i18n="aditivos.bond.pres">1L, 3L, 5L, 12L, 20L, 200L</span>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-[10px] font-bold" data-i18n="aditivos.bond.badge1">PRIMER/PUENTE</span>
+                            <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-[10px] font-bold" data-i18n="aditivos.bond.badge2">ANTISALITRE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 02: Ultra Shield V3 (Verde) -->
+                <div class="product-card rounded-3xl overflow-hidden hover-lift group border-t-4 border-emerald-500">
+                    <div class="h-48 bg-gradient-to-br from-emerald-500 to-green-600 relative overflow-hidden flex items-center justify-center">
+                        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zMCAxOGMzLjMxNCAwIDYtMi42ODYgNi02cy0yLjY4Ni02LTYtNi02IDIuNjg2LTYgNiAyLjY4NiA2IDYgNnptMCAwIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4xKSIvPjwvZz48L3N2Zz4=')] opacity-30"></div>
+                        <span class="text-6xl relative z-10">🛡️</span>
+                        <div class="absolute top-4 right-4">
+                            <span class="tech-badge-pill bg-emerald-500/90">SHIELD V3</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-2">
+                            <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+                            <span class="text-xs font-bold text-emerald-600 tracking-wider">AD-02</span>
+                        </div>
+                        <h3 class="font-syncopate text-xl font-bold text-metallic mb-1" data-i18n="aditivos.shield.titulo">ULTRA SHIELD V3</h3>
+                        <p class="text-xs text-emerald-600 font-bold tracking-wider mb-4" data-i18n="aditivos.shield.sub">IMPERMEABILIZANTE HIDROFÓBICO</p>
+                        
+                        <p class="text-sm text-slate-600 mb-4" data-i18n="aditivos.shield.desc">
+                            Crea un <strong>escudo invisible</strong> que repele el agua como la hoja de loto. Protege contra la humedad ascendente y el salitre.
+                        </p>
+                        
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center gap-2 text-xs text-slate-600">
+                                <span class="w-2 h-2 bg-emerald-400 rounded-full"></span>
+                                <span data-i18n="aditivos.shield.f1">Efecto loto (autolimpieza)</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-600">
+                                <span class="w-2 h-2 bg-emerald-400 rounded-full"></span>
+                                <span data-i18n="aditivos.shield.f2">Impermeabilización capilar</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-600">
+                                <span class="w-2 h-2 bg-emerald-400 rounded-full"></span>
+                                <span data-i18n="aditivos.shield.f3">Resistente a maresía</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-emerald-50 rounded-lg p-3 text-xs text-emerald-700 mb-4">
+                            <strong data-i18n="aditivos.presentacion">Presentaciones:</strong> 
+                            <span data-i18n="aditivos.shield.pres">1L, 3L, 5L, 12L, 20L, 200L</span>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded text-[10px] font-bold" data-i18n="aditivos.shield.badge1">HIDROFÓBICO</span>
+                            <span class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded text-[10px] font-bold" data-i18n="aditivos.shield.badge2">ANTI-MOHO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 03: Ultra Grout V3 (Rojo) -->
+                <div class="product-card rounded-3xl overflow-hidden hover-lift group border-t-4 border-red-500">
+                    <div class="h-48 bg-gradient-to-br from-red-500 to-rose-600 relative overflow-hidden flex items-center justify-center">
+                        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYtMi42ODYgNi02cy0yLjY4Ni02LTYtNi02IDIuNjg2LTYgNiAyLjY4NiA2IDYgNnptMCAwIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4xKSIvPjwvZz48L3N2Zz4=')] opacity-30"></div>
+                        <span class="text-6xl relative z-10">🔧</span>
+                        <div class="absolute top-4 right-4">
+                            <span class="tech-badge-pill bg-red-500/90">GROUT V3</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-2">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <span class="text-xs font-bold text-red-600 tracking-wider">AD-03</span>
+                        </div>
+                        <h3 class="font-syncopate text-xl font-bold text-metallic mb-1" data-i18n="aditivos.grout.titulo">ULTRA GROUT V3</h3>
+                        <p class="text-xs text-red-600 font-bold tracking-wider mb-4" data-i18n="aditivos.grout.sub">FLEXIBILIDAD EXTREMA PARA JUNTAS</p>
+                        
+                        <p class="text-sm text-slate-600 mb-4" data-i18n="aditivos.grout.desc">
+                            Transforma el cemento de juntas en un material <strong>elástico y flexible</strong> que no se agrieta con movimientos estructurales ni vibraciones.
+                        </p>
+                        
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center gap-2 text-xs text-slate-600">
+                                <span class="w-2 h-2 bg-red-400 rounded-full"></span>
+                                <span data-i18n="aditivos.grout.f1">Alta flexibilidad (>20%)</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-600">
+                                <span class="w-2 h-2 bg-red-400 rounded-full"></span>
+                                <span data-i18n="aditivos.grout.f2">Absorbe vibraciones</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-600">
+                                <span class="w-2 h-2 bg-red-400 rounded-full"></span>
+                                <span data-i18n="aditivos.grout.f3">Ideal para porcelanato</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-red-50 rounded-lg p-3 text-xs text-red-700 mb-4">
+                            <strong data-i18n="aditivos.presentacion">Presentaciones:</strong> 
+                            <span data-i18n="aditivos.grout.pres">1L, 3L, 5L, 12L, 20L, 200L</span>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-red-100 text-red-700 rounded text-[10px] font-bold" data-i18n="aditivos.grout.badge1">ELÁSTICO</span>
+                            <span class="px-2 py-1 bg-red-100 text-red-700 rounded text-[10px] font-bold" data-i18n="aditivos.grout.badge2">ANTIFISURAS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 04: Ultra Cure V3 (Amarillo) -->
+                <div class="product-card rounded-3xl overflow-hidden hover-lift group border-t-4 border-amber-400">
+                    <div class="h-48 bg-gradient-to-br from-amber-400 to-orange-500 relative overflow-hidden flex items-center justify-center">
+                        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zMCAxOGMzLjMxNCAwIDYtMi42ODYgNi02cy0yLjY4Ni02LTYtNi02IDIuNjg2LTYgNiAyLjY4NiA2IDYgNnptMCAwIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4xKSIvPjwvZz48L3N2Zz4=')] opacity-30"></div>
+                        <span class="text-6xl relative z-10">☀️</span>
+                        <div class="absolute top-4 right-4">
+                            <span class="tech-badge-pill bg-amber-500/90">CURE V3</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-2">
+                            <div class="w-3 h-3 rounded-full bg-amber-400"></div>
+                            <span class="text-xs font-bold text-amber-600 tracking-wider">AD-04</span>
+                        </div>
+                        <h3 class="font-syncopate text-xl font-bold text-metallic mb-1" data-i18n="aditivos.cure.titulo">ULTRA CURE V3</h3>
+                        <p class="text-xs text-amber-600 font-bold tracking-wider mb-4" data-i18n="aditivos.cure.sub">PROTECCIÓN DE FRAGUADO ANTISALITRE</p>
+                        
+                        <p class="text-sm text-slate-600 mb-4" data-i18n="aditivos.cure.desc">
+                            El <strong>protector solar del concreto</strong>. Evita que el sol tropical dañe el fraguado y previene la aparición del salitre desde el primer día.
+                        </p>
+                        
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center gap-2 text-xs text-slate-600">
+                                <span class="w-2 h-2 bg-amber-400 rounded-full"></span>
+                                <span data-i18n="aditivos.cure.f1">Retención de humedad óptima</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-600">
+                                <span class="w-2 h-2 bg-amber-400 rounded-full"></span>
+                                <span data-i18n="aditivos.cure.f2">Previene salitre inicial</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-600">
+                                <span class="w-2 h-2 bg-amber-400 rounded-full"></span>
+                                <span data-i18n="aditivos.cure.f3">Fragua uniforme en calor</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-amber-50 rounded-lg p-3 text-xs text-amber-700 mb-4">
+                            <strong data-i18n="aditivos.presentacion">Presentaciones:</strong> 
+                            <span data-i18n="aditivos.cure.pres">1L, 3L, 5L, 12L, 20L, 200L</span>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-amber-100 text-amber-700 rounded text-[10px] font-bold" data-i18n="aditivos.cure.badge1">CURADO</span>
+                            <span class="px-2 py-1 bg-amber-100 text-amber-700 rounded text-[10px] font-bold" data-i18n="aditivos.cure.badge2">UV PROTECT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 05: Ultra Struct V3 (Gris) -->
+                <div class="product-card rounded-3xl overflow-hidden hover-lift group border-t-4 border-slate-500 md:col-span-2 lg:col-span-1">
+                    <div class="h-48 bg-gradient-to-br from-slate-500 to-slate-700 relative overflow-hidden flex items-center justify-center">
+                        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYtMi42ODYgNi02cy0yLjY4Ni02LTYtNi02IDIuNjg2LTYgNiAyLjY4NiA2IDYgNnptMCAwIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4xKSIvPjwvZz48L3N2Zz4=')] opacity-30"></div>
+                        <span class="text-6xl relative z-10">🏗️</span>
+                        <div class="absolute top-4 right-4">
+                            <span class="tech-badge-pill bg-slate-500/90">STRUCT V3</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-2">
+                            <div class="w-3 h-3 rounded-full bg-slate-500"></div>
+                            <span class="text-xs font-bold text-slate-600 tracking-wider">AD-05</span>
+                        </div>
+                        <h3 class="font-syncopate text-xl font-bold text-metallic mb-1" data-i18n="aditivos.struct.titulo">ULTRA STRUCT V3</h3>
+                        <p class="text-xs text-slate-600 font-bold tracking-wider mb-4" data-i18n="aditivos.struct.sub">REFUERZO TIXOTRÓPICO ESTRUCTURAL</p>
+                        
+                        <p class="text-sm text-slate-600 mb-4" data-i18n="aditivos.struct.desc">
+                            Convierte morteros comunes en <strong>materiales estructurales de alta resistencia</strong>. Anti-repulgado, anti-bleeding, ideal para inyecciones y reparaciones.
+                        </p>
+                        
+                        <div class="space-y-2 mb-4">
+                            <div class="flex items-center gap-2 text-xs text-slate-600">
+                                <span class="w-2 h-2 bg-slate-400 rounded-full"></span>
+                                <span data-i18n="aditivos.struct.f1">No se segrega ni sangra</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-600">
+                                <span class="w-2 h-2 bg-slate-400 rounded-full"></span>
+                                <span data-i18n="aditivos.struct.f2">Alta resistencia temprana</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-slate-600">
+                                <span class="w-2 h-2 bg-slate-400 rounded-full"></span>
+                                <span data-i18n="aditivos.struct.f3">Fluidez controlada</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-100 rounded-lg p-3 text-xs text-slate-700 mb-4">
+                            <strong data-i18n="aditivos.presentacion">Presentaciones:</strong> 
+                            <span data-i18n="aditivos.struct.pres">750ml, 1L (Kits), 5L, 12L, 20L</span>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-slate-200 text-slate-700 rounded text-[10px] font-bold" data-i18n="aditivos.struct.badge1">TIXOTRÓPICO</span>
+                            <span class="px-2 py-1 bg-slate-200 text-slate-700 rounded text-[10px] font-bold" data-i18n="aditivos.struct.badge2">ESTRUCTURAL</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Nota de compatibilidad -->
+            <div class="mt-12 bg-slate-50 rounded-2xl p-6 border border-slate-200">
+                <h4 class="font-syncopate text-lg font-bold text-slate-800 mb-3 flex items-center gap-2">
+                    <span>⚗️</span>
+                    <span data-i18n="aditivos.compatibilidad.titulo">COMPATIBILIDAD TOTAL</span>
+                </h4>
+                <p class="text-sm text-slate-600" data-i18n="aditivos.compatibilidad.texto">
+                    Todos los aditivos Ultra V3 están formulados para trabajar en sinergia. Pueden combinarse entre sí siguiendo nuestras especificaciones técnicas para crear <strong>sistemas de concreto inteligente</strong> adaptados al clima caribeño extremo.
+                </p>
+            </div>
+        </div>
+    </section>
 
     <div class="h-2 bg-gradient-to-r from-transparent via-cyan-400 to-transparent max-w-6xl mx-auto"></div>
 
-    
+    <div class="h-2 bg-gradient-to-r from-transparent via-cyan-400 to-transparent max-w-6xl mx-auto"></div>
+
     <!-- FAQ / CONSULTAS TÉCNICAS -->
     <section id="faq" class="py-20 px-4 bg-slate-50">
         <div class="max-w-4xl mx-auto">
@@ -1971,6 +2257,141 @@ Vehículo líquido activador para preparación de todos los sistemas Prisma Core
 💬 Consultas: +58 412 3521113</div>
                
 </div>
+
+                <!-- AD-01: Ultra Bond V3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg border-l-4 border-blue-500 hover-lift cursor-pointer" onclick="copyFicha('ficha-bond-v3')">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-xs text-slate-400 font-bold">AD-01</span>
+                            <h3 class="font-syncopate text-lg font-bold text-slate-800">ULTRA BOND V3</h3>
+                        </div>
+                        <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">COPIAR</span>
+                    </div>
+                    <div id="ficha-bond-v3" class="bg-slate-50 rounded-lg p-4 text-sm font-mono text-slate-600 whitespace-pre-wrap">─── PRISMA CORE ───
+🔹 ULTRA BOND V3 (AD-01)
+
+📋 FUNCIÓN:
+Adherencia molecular total entre concreto viejo y nuevo. Elimina delaminación.
+
+⚙️ BENEFICIOS:
+• Puente de unión molecular
+• Antisalitre integrado
+• Para parches estructurales
+
+📦 PRESENTACIONES:
+Retail: 1L, 3L, 5L, 12L
+Industrial: 20L, 200L
+
+💬 Consultas: +58 412 3521113</div>
+                </div>
+
+                <!-- AD-02: Ultra Shield V3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg border-l-4 border-emerald-500 hover-lift cursor-pointer" onclick="copyFicha('ficha-shield-v3')">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-xs text-slate-400 font-bold">AD-02</span>
+                            <h3 class="font-syncopate text-lg font-bold text-slate-800">ULTRA SHIELD V3</h3>
+                        </div>
+                        <span class="text-xs bg-emerald-100 text-emerald-600 px-2 py-1 rounded">COPIAR</span>
+                    </div>
+                    <div id="ficha-shield-v3" class="bg-slate-50 rounded-lg p-4 text-sm font-mono text-slate-600 whitespace-pre-wrap">─── PRISMA CORE ───
+🔹 ULTRA SHIELD V3 (AD-02)
+
+📋 FUNCIÓN:
+Impermeabilización hidrofóbica tipo "efecto loto". Repelente al agua y salitre.
+
+⚙️ BENEFICIOS:
+• Impermeabilización capilar
+• Autolimpieza natural
+• Resistente a maresía
+
+📦 PRESENTACIONES:
+Retail: 1L, 3L, 5L, 12L
+Industrial: 20L, 200L
+
+💬 Consultas: +58 412 3521113</div>
+                </div>
+
+                <!-- AD-03: Ultra Grout V3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg border-l-4 border-red-500 hover-lift cursor-pointer" onclick="copyFicha('ficha-grout-v3')">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-xs text-slate-400 font-bold">AD-03</span>
+                            <h3 class="font-syncopate text-lg font-bold text-slate-800">ULTRA GROUT V3</h3>
+                        </div>
+                        <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded">COPIAR</span>
+                    </div>
+                    <div id="ficha-grout-v3" class="bg-slate-50 rounded-lg p-4 text-sm font-mono text-slate-600 whitespace-pre-wrap">─── PRISMA CORE ───
+🔹 ULTRA GROUT V3 (AD-03)
+
+📋 FUNCIÓN:
+Flexibilizante extrema para juntas de porcelanato y cerámica.
+
+⚙️ BENEFICIOS:
+• Flexibilidad >20%
+• Absorbe vibraciones
+• Antifisuras garantizado
+
+📦 PRESENTACIONES:
+Retail: 1L, 3L, 5L, 12L
+Industrial: 20L, 200L
+
+💬 Consultas: +58 412 3521113</div>
+                </div>
+
+                <!-- AD-04: Ultra Cure V3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg border-l-4 border-amber-400 hover-lift cursor-pointer" onclick="copyFicha('ficha-cure-v3')">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-xs text-slate-400 font-bold">AD-04</span>
+                            <h3 class="font-syncopate text-lg font-bold text-slate-800">ULTRA CURE V3</h3>
+                        </div>
+                        <span class="text-xs bg-amber-100 text-amber-600 px-2 py-1 rounded">COPIAR</span>
+                    </div>
+                    <div id="ficha-cure-v3" class="bg-slate-50 rounded-lg p-4 text-sm font-mono text-slate-600 whitespace-pre-wrap">─── PRISMA CORE ───
+🔹 ULTRA CURE V3 (AD-04)
+
+📋 FUNCIÓN:
+Protección de fraguado antisalitre para climas tropicales extremos.
+
+⚙️ BENEFICIOS:
+• Retención de humedad óptima
+• Protección UV durante fraguado
+• Previene salitre inicial
+
+📦 PRESENTACIONES:
+Retail: 1L, 3L, 5L, 12L
+Industrial: 20L, 200L
+
+💬 Consultas: +58 412 3521113</div>
+                </div>
+
+                <!-- AD-05: Ultra Struct V3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg border-l-4 border-slate-500 hover-lift cursor-pointer" onclick="copyFicha('ficha-struct-v3')">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-xs text-slate-400 font-bold">AD-05</span>
+                            <h3 class="font-syncopate text-lg font-bold text-slate-800">ULTRA STRUCT V3</h3>
+                        </div>
+                        <span class="text-xs bg-slate-200 text-slate-600 px-2 py-1 rounded">COPIAR</span>
+                    </div>
+                    <div id="ficha-struct-v3" class="bg-slate-50 rounded-lg p-4 text-sm font-mono text-slate-600 whitespace-pre-wrap">─── PRISMA CORE ───
+🔹 ULTRA STRUCT V3 (AD-05)
+
+📋 FUNCIÓN:
+Refuerzo tixotrópico estructural. Convierte morteros en materiales de alta resistencia.
+
+⚙️ BENEFICIOS:
+• Anti-repulgado / Anti-bleeding
+• Alta resistencia temprana
+• Fluidez controlada
+
+📦 PRESENTACIONES:
+Kits: 750ml, 1L
+Industrial: 5L, 12L, 20L
+
+💬 Consultas: +58 412 3521113</div>
+                </div>
             </div>
 
             <!-- Instrucciones -->
@@ -2072,6 +2493,7 @@ Vehículo líquido activador para preparación de todos los sistemas Prisma Core
             </div>
         </div>
     </div>
+
 <script>
 // ============================================================
 // SISTEMA DE TRADUCCIÓN PRISMA CORE v4.0
@@ -2079,6 +2501,9 @@ Vehículo líquido activador para preparación de todos los sistemas Prisma Core
 // ============================================================
 
 const I18N = {
+    // Share button
+    "share.text": { es: "Compartir Catálogo", en: "Share Catalog" },
+    
     // ==========================================================
     // HEADER & NAVEGACIÓN
     // ==========================================================
@@ -2228,45 +2653,7 @@ const I18N = {
     },
 
     // ==========================================================
-    // SECCIÓN 01: ACABADOS
-    // ==========================================================
-    "acabados.titulo": { es: "SISTEMA DE ACABADOS", en: "FINISHING SYSTEM" },
-    "acabados.subtitulo": { es: "SUPERFICIES PERFECTAS", en: "PERFECT SURFACES" },
-    "acabados.ultra.badge": {
-        es: "YESO MODIFICADO DE ALTA TECNOLOGÍA",
-        en: "HIGH-TECH MODIFIED PLASTER"
-    },
-    "acabados.ultra.titulo": { es: "ULTRA BASE COAT", en: "ULTRA BASE COAT" },
-    "acabados.ultra.desc": {
-        es: "El yeso que conocías, ahora es TIXOTRÓPICO. Gracias a nuestra tecnología PRISMA CORE, hemos desarrollado un 'yeso inteligente' que obedece estrictamente a la mano del aplicador.",
-        en: "The plaster you knew, now THIXOTROPIC. Thanks to our PRISMA CORE technology, we have developed an 'intelligent plaster' that strictly obeys the applicator's hand."
-    },
-    "acabados.ultra.beneficio1.titulo": { es: "EFECTO 'GRIP' VERTICAL", en: "VERTICAL 'GRIP' EFFECT" },
-    "acabados.ultra.beneficio1.desc": {
-        es: "Se mantiene clavado en paredes/techos, capas gruesas sin goteo.",
-        en: "Stays fixed on walls/ceilings, thick layers without dripping."
-    },
-    "acabados.ultra.beneficio2.titulo": { es: "FLUIDEZ BAJO PRESIÓN", en: "FLUIDITY UNDER PRESSURE" },
-    "acabados.ultra.beneficio2.desc": {
-        es: "Sedoso al extender, reduce esfuerzo y tiempo de nivelación.",
-        en: "Silky when spreading, reduces effort and leveling time."
-    },
-    "acabados.ultra.beneficio3.titulo": { es: "CERO DESPERDICIO", en: "ZERO WASTE" },
-    "acabados.ultra.beneficio3.desc": {
-        es: "Consistencia tixotrópica = optimización de cada gramo.",
-        en: "Thixotropic consistency = optimization of every gram."
-    },
-    "acabados.ultra.uso": {
-        es: "Modo de uso: Interiores (mezcla con agua) • Exteriores (mezcla con ULTRA CORE V3)",
-        en: "Usage: Interior (mix with water) • Exterior (mix with ULTRA CORE V3)"
-    },
-    "acabados.ultra.spec.rendimiento": { es: "Rendimiento", en: "Yield" },
-    "acabados.ultra.spec.tiempo": { es: "Trabajabilidad", en: "Workability" },
-    "acabados.ultra.spec.presentaciones": { es: "Presentaciones", en: "Packaging" },
-    "acabados.ultra.spec.tecnologia": { es: "Tecnología", en: "Technology" },
-
-    // ==========================================================
-    // SECCIÓN 02: JUNTAS CARETEO
+    // SECCIÓN 02: JUNTAS
     // ==========================================================
     "juntas.titulo": { es: "SISTEMA DE JUNTAS CARETEO", en: "CARETEO JOINT SYSTEM" },
     "juntas.subtitulo": { es: "SELLADO PERFECTO", en: "PERFECT SEALING" },
@@ -2346,14 +2733,14 @@ const I18N = {
     "revestimientos.tag1": { es: "Fachadas modernas", en: "Modern facades" },
     "revestimientos.tag2": { es: "Piscinas", en: "Swimming pools" },
     "revestimientos.tag3": { es: "Interiores de diseño", en: "Designer interiors" },
-    "revestimientos.tag4": { es: "Disponible en colores", en: "Available in colors " },
+    "revestimientos.tag4": { es: "Disponible en colores", en: "Available in colors" },
     "revestimientos.feature1": { es: "FUSIÓN MOLECULAR", en: "MOLECULAR FUSION" },
     "revestimientos.feature2": { es: "RESISTENCIA UV", en: "UV RESISTANCE" },
     "revestimientos.feature3": { es: "AUTOLIMPIEZA", en: "SELF-CLEANING" },
     "revestimientos.feature4": { es: "DUREZA INDUSTRIAL", en: "INDUSTRIAL HARDNESS" },
 
     // ==========================================================
-    // SECCIÓN 04: SELLADO (CARETEO ULTRA 888)
+    // SECCIÓN 04: SELLADO
     // ==========================================================
     "sellado.titulo": { es: "SELLADO DE ALTA PRECISIÓN", en: "HIGH-PRECISION SEALING" },
     "sellado.subtitulo": { es: "FUSIBLE ESTRUCTURAL ANTI-DEGRADANTE", en: "ANTI-DEGRADATION STRUCTURAL FUSE" },
@@ -2394,12 +2781,11 @@ const I18N = {
     "sellado.feature4": { es: "INMUNE A CLORUROS", en: "CHLORIDE IMMUNE" },
 
     // ==========================================================
-    // SECCIÓN 05: SISTEMA CEMENTOSO
+    // SECCIÓN 05: CEMENTO
     // ==========================================================
     "cemento.titulo": { es: "SISTEMA CEMENTOSO", en: "CEMENT SYSTEM" },
     "cemento.subtitulo": { es: "INGENIERÍA ESTRUCTURAL MOLECULAR", en: "MOLECULAR STRUCTURAL ENGINEERING" },
     
-    // Sub-bloque 5.1
     "cemento.blindaje.titulo": { es: "BLINDAJE Y PREPARACIÓN", en: "SHIELDING AND PREPARATION" },
     "cemento.blindaje.sub": { es: "PROTECCIÓN MOLECULAR AVANZADA", en: "ADVANCED MOLECULAR PROTECTION" },
     "cemento.primer.badge": { es: "PROTECCIÓN ANTICORROSIVA", en: "ANTICORROSIVE PROTECTION" },
@@ -2427,7 +2813,6 @@ const I18N = {
     },
     "cemento.activador.nota": { es: "Compatible con toda la línea", en: "Compatible with entire line" },
 
-    // Sub-bloque 5.2
     "cemento.cemwhite.badge": { es: "CEMENTO BLANCO PREMIUM", en: "PREMIUM WHITE CEMENT" },
     "cemento.cemwhite.titulo": { es: "ULTRA CEM-WHITE", en: "ULTRA CEM-WHITE" },
     "cemento.cemwhite.desc": {
@@ -2443,8 +2828,8 @@ const I18N = {
         en: "Architectural Grade Purity and Whiteness, Contraction Control (Zero Cracks), Hydrophobic Matrix, Molecular Adhesion, Solar Refraction Resistance"
     },
     "cemento.cemwhite.matrix": {
-        es: "Al usar nuestro sistema, está invirtiendo en una Matriz de Ingeniería que elimina la porosidad, resiste el salitre y garantiza que el blanco se mantenga blanco.",
-        en: "By using our system, you are investing in an Engineering Matrix that eliminates porosity, resists saltpeter, and guarantees white stays white."
+        es: "Matriz de Ingeniería que elimina la porosidad, resiste el salitre y garantiza que el blanco se mantenga blanco.",
+        en: "Engineering Matrix that eliminates porosity, resists saltpeter, and guarantees white stays white."
     },
     "cemento.gris.badge": { es: "MORTERO TIXOTRÓPICO NANO", en: "NANO THIXOTROPIC MORTAR" },
     "cemento.gris.titulo": { es: "GRIS ULTRA", en: "GRAY ULTRA" },
@@ -2463,14 +2848,13 @@ const I18N = {
         en: "Nano-grade thixotropy: stays firm on vertical surfaces and ceilings."
     },
 
-    // Sub-bloque 5.3
     "cemento.hd.titulo": { es: "SISTEMA DE RECUPERACIÓN ESTRUCTURAL HD", en: "HD STRUCTURAL RECOVERY SYSTEM" },
     "cemento.hd.sub": { es: "FÁCIL APLICACIÓN DE INGENIERÍA EN 3 PASOS", en: "EASY ENGINEERING APPLICATION IN 3 STEPS" },
     "cemento.hd.badge": { es: "PARA COLUMNAS Y VIGAS CON ACERO EXPUESTO", en: "FOR COLUMNS AND BEAMS WITH EXPOSED STEEL" },
-    "cemento.hd.titulo2": { es: "RECUPERACIÓN DE ELEMENTOS ESTRUCTURALES", en: "Recovery of structural elements" },
+    "cemento.hd.titulo2": { es: "RECUPERACIÓN DE ELEMENTOS ESTRUCTURALES", en: "RECOVERY OF STRUCTURAL ELEMENTS" },
     "cemento.hd.desc": {
-        es: "Cuando el óxido ataca el acero de refuerzo, la estructura pierde su alma. Este sistema de ingeniería molecular en 3 pasos no solo repara: reconstruye la inmunidad estructural del elemento desde su núcleo metálico. Efectivo en la erradicación de hongo y moho en estructuras degradadas.",
-        en: "When rust attacks reinforcing steel, the structure loses its soul. This 3-step molecular engineering system doesn't just repair: it rebuilds structural immunity from the metallic core. Effective in eradicating fungi and mold in degraded structures."
+        es: "Cuando el óxido ataca el acero de refuerzo, la estructura pierde su alma. Este sistema de ingeniería molecular en 3 pasos no solo repara: reconstruye la inmunidad estructural del elemento desde su núcleo metálico.",
+        en: "When rust attacks reinforcing steel, the structure loses its soul. This 3-step molecular engineering system doesn't just repair: it rebuilds structural immunity from the metallic core."
     },
     "cemento.hd.paso1.titulo": { es: "PASIVADO MOLECULAR", en: "MOLECULAR PASSIVATION" },
     "cemento.hd.paso1.sub": { es: "Inhibidor de Corrosión V3", en: "Corrosion Inhibitor V3" },
@@ -2482,11 +2866,10 @@ const I18N = {
     "cemento.hd.paso3.sub": { es: "Nano Booster", en: "Nano Booster" },
     "cemento.hd.paso3.desc": { es: "Sellado con Nano Booster (Efecto Loto) de 1 Litro", en: "Sealing with Nano Booster 1L (Lotus Effect)" },
 
-    // Sub-bloque 5.4
     "cemento.hongo.titulo": { es: "SISTEMA ULTRA HONGO KILLER", en: "ULTRA HONGO KILLER SYSTEM" },
     "cemento.hongo.sub": { es: "BIO-MATRIX MOLECULAR SHIELD", en: "BIO-MATRIX MOLECULAR SHIELD" },
     "cemento.hongo.badge": { es: "ESPECIAL PARA EDIFICACIONES COSTERAS Y HOTELES", en: "SPECIAL FOR COASTAL BUILDINGS AND HOTELS" },
-    "cemento.hongo.titulo2": { es: "ERRADICACIÓN MOLECULAR DE HONGOS Y ALGAS", en: "Molecular eradication of fungi and algae" },
+    "cemento.hongo.titulo2": { es: "ERRADICACIÓN MOLECULAR DE HONGOS Y ALGAS", en: "MOLECULAR ERADICATION OF FUNGI AND ALGAE" },
     "cemento.hongo.tagline": { es: "No Limpie la Mancha. Erradique la Fuente.", en: "Don't Clean the Stain. Eradicate the Source." },
     "cemento.hongo.desc": {
         es: "El Sistema Ultra Hongo Killer no es un limpiador: es una intervención estructural biocida de tres fases.",
@@ -2541,121 +2924,101 @@ const I18N = {
     "potenciadores.nano.ideal3": { es: "Muros exteriores", en: "Exterior walls" },
     "potenciadores.nano.f1": { es: "Hidrofóbico molecular", en: "Molecular hydrophobic" },
     "potenciadores.nano.f2": { es: "Autolimpieza natural", en: "Natural self-cleaning" },
+    
+    // ==========================================================
+    // SECCIÓN 07: ADITIVOS
+    // ==========================================================
+    "nav.aditivos": { es: "ADITIVOS", en: "ADDITIVES" },
+    "aditivos.titulo": { es: "SISTEMA DE ADITIVOS ULTRA", en: "ULTRA ADDITIVES SYSTEM" },
+    "aditivos.subtitulo": { es: "NANOTECNOLOGIA APLICADA PARA EL CONCRETO PERFECTO", en: "APPLIED NANOTECHNOLOGY FOR HIGH-PERFORMANCE CONCRETE" },
+    "aditivos.banner.titulo": { es: "HECHO EN LA ISLA DE MARGARITA, VENEZUELA", en: "MADE IN MARGARITA ISLAND, VENEZUELA" },
+    "aditivos.banner.texto": { 
+        es: "Diseñados en el Caribe, para el Caribe. Resistencia máxima al salitre, humedad extrema y sol tropical.", 
+        en: "Designed in the Caribbean, for the Caribbean. Maximum resistance to saltpeter, extreme humidity, and tropical sun." 
+    },
+    "aditivos.intro": {
+    es: "<strong>Aditivos químicos de alto desempeño</strong> que modifican las propiedades del concreto y mortero para máxima durabilidad en ambientes agresivos. Cada formulación resuelve un desafío específico: adherencia, impermeabilización, flexibilidad, curado óptimo o refuerzo estructural. Diseñados para soportar el ataque del salitre, la humedad extrema y la radiación UV tropical sin perder rendimiento.",
+    en: "<strong>High-performance chemical additives</strong> that modify concrete and mortar properties for maximum durability in aggressive environments. Each formulation solves a specific challenge: adhesion, waterproofing, flexibility, optimal curing, or structural reinforcement. Designed to withstand saltpeter attack, extreme humidity, and tropical UV radiation without losing performance."
+    },
+    "aditivos.presentacion": { es: "Presentaciones", en: "Presentations" },
+    "aditivos.compatibilidad.titulo": { es: "COMPATIBILIDAD TOTAL", en: "TOTAL COMPATIBILITY" },
+    "aditivos.compatibilidad.texto": {
+        es: "Todos los aditivos Ultra V3 están formulados para trabajar en sinergia. Pueden combinarse entre sí siguiendo nuestras especificaciones técnicas para crear <strong>sistemas de concreto inteligente</strong> adaptados al clima caribeño extremo.",
+        en: "All Ultra V3 additives are formulated to work in synergy. They can be combined with each other following our technical specifications to create <strong>smart concrete systems</strong> adapted to extreme Caribbean weather."
+    },
+    
+    // Bond V3
+    "aditivos.bond.titulo": { es: "ULTRA BOND V3", en: "ULTRA BOND V3" },
+    "aditivos.bond.sub": { es: "ADHERENCIA MOLECULAR TOTAL", en: "TOTAL MOLECULAR ADHESION" },
+    "aditivos.bond.desc": {
+        es: "El <strong>pegamento molecular</strong> que hace que el nuevo concreto se una al viejo como si fueran uno solo. Elimina la delaminación.",
+        en: "The <strong>molecular glue</strong> that makes new concrete bond to old as if they were one. Eliminates delamination."
+    },
+    "aditivos.bond.f1": { es: "Puente de unión entre capas", en: "Bonding bridge between layers" },
+    "aditivos.bond.f2": { es: "Elimina el desprendimiento", en: "Eliminates detachment" },
+    "aditivos.bond.f3": { es: "Ideal para parches estructurales", en: "Ideal for structural patches" },
+    "aditivos.bond.pres": { es: "1L, 3L, 5L, 12L, 20L, 200L", en: "1L, 3L, 5L, 12L, 20L, 200L" },
+    "aditivos.bond.badge1": { es: "PRIMER/PUENTE", en: "PRIMER/BRIDGE" },
+    "aditivos.bond.badge2": { es: "ANTISALITRE", en: "ANTI-SALTPETER" },
+    
+    // Shield V3
+    "aditivos.shield.titulo": { es: "ULTRA SHIELD V3", en: "ULTRA SHIELD V3" },
+    "aditivos.shield.sub": { es: "IMPERMEABILIZANTE HIDROFÓBICO", en: "HYDROPHOBIC WATERPROOFER" },
+    "aditivos.shield.desc": {
+        es: "Crea un <strong>escudo invisible</strong> que repele el agua como la hoja de loto. Protege contra la humedad ascendente y el salitre.",
+        en: "Creates an <strong>invisible shield</strong> that repels water like a lotus leaf. Protects against rising damp and saltpeter."
+    },
+    "aditivos.shield.f1": { es: "Efecto loto (autolimpieza)", en: "Lotus effect (self-cleaning)" },
+    "aditivos.shield.f2": { es: "Impermeabilización capilar", en: "Capillary waterproofing" },
+    "aditivos.shield.f3": { es: "Resistente a maresía", en: "Sea spray resistant" },
+    "aditivos.shield.pres": { es: "1L, 3L, 5L, 12L, 20L, 200L", en: "1L, 3L, 5L, 12L, 20L, 200L" },
+    "aditivos.shield.badge1": { es: "HIDROFÓBICO", en: "HYDROPHOBIC" },
+    "aditivos.shield.badge2": { es: "ANTI-MOHO", en: "ANTI-MOLD" },
+    
+    // Grout V3
+    "aditivos.grout.titulo": { es: "ULTRA GROUT V3", en: "ULTRA GROUT V3" },
+    "aditivos.grout.sub": { es: "FLEXIBILIDAD EXTREMA PARA JUNTAS", en: "EXTREME FLEXIBILITY FOR JOINTS" },
+    "aditivos.grout.desc": {
+        es: "Transforma el cemento de juntas en un material <strong>elástico y flexible</strong> que no se agrieta con movimientos estructurales ni vibraciones.",
+        en: "Transforms joint cement into an <strong>elastic and flexible</strong> material that doesn't crack with structural movements or vibrations."
+    },
+    "aditivos.grout.f1": { es: "Alta flexibilidad (>20%)", en: "High flexibility (>20%)" },
+    "aditivos.grout.f2": { es: "Absorbe vibraciones", en: "Absorbs vibrations" },
+    "aditivos.grout.f3": { es: "Ideal para porcelanato", en: "Ideal for porcelain tile" },
+    "aditivos.grout.pres": { es: "1L, 3L, 5L, 12L, 20L, 200L", en: "1L, 3L, 5L, 12L, 20L, 200L" },
+    "aditivos.grout.badge1": { es: "ELÁSTICO", en: "ELASTIC" },
+    "aditivos.grout.badge2": { es: "ANTIFISURAS", en: "ANTI-CRACK" },
+    
+    // Cure V3
+    "aditivos.cure.titulo": { es: "ULTRA CURE V3", en: "ULTRA CURE V3" },
+    "aditivos.cure.sub": { es: "PROTECCIÓN DE FRAGUADO ANTISALITRE", en: "ANTI-SALTPETER CURING PROTECTION" },
+    "aditivos.cure.desc": {
+        es: "El <strong>protector solar del concreto</strong>. Evita que el sol tropical dañe el fraguado y previene la aparición del salitre desde el primer día.",
+        en: "The <strong>sunscreen of concrete</strong>. Prevents tropical sun from damaging curing and prevents saltpeter appearance from day one."
+    },
+    "aditivos.cure.f1": { es: "Retención de humedad óptima", en: "Optimal moisture retention" },
+    "aditivos.cure.f2": { es: "Previene salitre inicial", en: "Prevents initial saltpeter" },
+    "aditivos.cure.f3": { es: "Fragua uniforme en calor", en: "Uniform curing in heat" },
+    "aditivos.cure.pres": { es: "1L, 3L, 5L, 12L, 20L, 200L", en: "1L, 3L, 5L, 12L, 20L, 200L" },
+    "aditivos.cure.badge1": { es: "CURADO", en: "CURING" },
+    "aditivos.cure.badge2": { es: "UV PROTECT", en: "UV PROTECT" },
+    
+    // Struct V3
+    "aditivos.struct.titulo": { es: "ULTRA STRUCT V3", en: "ULTRA STRUCT V3" },
+    "aditivos.struct.sub": { es: "REFUERZO TIXOTRÓPICO ESTRUCTURAL", en: "STRUCTURAL THIXOTROPIC REINFORCEMENT" },
+    "aditivos.struct.desc": {
+        es: "Convierte morteros comunes en <strong>materiales estructurales de alta resistencia</strong>. Anti-repulgado, anti-bleeding, ideal para inyecciones y reparaciones.",
+        en: "Turns common mortars into <strong>high-strength structural materials</strong>. Anti-bleeding, ideal for injections and repairs."
+    },
+    "aditivos.struct.f1": { es: "No se segrega ni sangra", en: "Does not segregate or bleed" },
+    "aditivos.struct.f2": { es: "Alta resistencia temprana", en: "High early strength" },
+    "aditivos.struct.f3": { es: "Fluidez controlada", en: "Controlled fluidity" },
+    "aditivos.struct.pres": { es: "750ml, 1L (Kits), 5L, 12L, 20L", en: "750ml, 1L (Kits), 5L, 12L, 20L" },
+    "aditivos.struct.badge1": { es: "TIXOTRÓPICO", en: "THIXOTROPIC" },
+    "aditivos.struct.badge2": { es: "ESTRUCTURAL", en: "STRUCTURAL" },
 
     // ==========================================================
-    // SECCIÓN 07: DIAMOND - ESPECTRO DUAL
-    // ==========================================================
-    "diamond.titulo": { es: "INGENIERÍA DE ESPECTRO DUAL", en: "DUAL SPECTRUM ENGINEERING" },
-    "diamond.subtitulo": { es: "ASOCIACIÓN INSTINTIVA • RENDIMIENTO MOLECULAR", en: "INSTINCTIVE ASSOCIATION • MOLECULAR PERFORMANCE" },
-    "diamond.data_label": { es: "DATA TÉCNICA:", en: "TECHNICAL DATA:" },
-
-    // Emerald Core
-    "diamond.emerald.badge": { es: "SEGURIDAD QUE SÍ SE VE", en: "SAFETY YOU CAN SEE" },
-    "diamond.emerald.desc": { 
-        es: "Señalización luminiscente autónoma de alta visual. La longitud es la más detectable por el ojo humano en condiciones de estrés. Ideal para entornos industriales y señalización en vías con ausencia de luz nocturna, rayados, sótanos, escaleras, salidas de emergencia, rutas de escape y donde la visibilidad por falta de electricidad, es una necesidad vital.", 
-        en: "High-visibility autonomous luminescent signaling. This wavelength is the most detectable by the human eye under stress. Ideal for industrial environments and signage on roads with no night lighting, road markings, basements, stairs, emergency exits, escape routes, and where visibility during power outages is vital." 
-    },
-    "diamond.emerald.li1": { es: "Perímetros de muelles y puertos", en: "Dock and port perimeters" },
-    "diamond.emerald.li2": { es: "Helipuertos y zonas de aterrizaje", en: "Helipads and landing zones" },
-    "diamond.emerald.li3": { es: "Hoteles y centros comerciales", en: "Hotels and shopping malls" },
-    "diamond.emerald.li4": { es: "Vialidad en general y señalización", en: "Road signage and markings" },
-    "diamond.emerald.li5": { es: "Alta resistencia al salitre y exposición UV", en: "High saltpeter and UV resistance" },
-    "diamond.emerald.data": { 
-        es: "Máxima luminancia residual. Carga ultrarrápida incluso con luz indirecta.", 
-        en: "Maximum residual luminance. Ultra-fast charging even with indirect light." 
-    },
-
-    // Ice Diamond
-    "diamond.ice.badge": { es: "BRILLO ARQUITECTÓNICO", en: "ARCHITECTURAL GLOW" },
-    "diamond.ice.desc": { 
-        es: "Luminiscencia elegante que se activa por la ausencia de luz y se recarga con la luz natural y/o artificial. La pureza de su espectro evoca tecnología criogénica y lujo moderno. Una armadura de luz invisible que se adhiere a cualquier sustrato poroso o no, que de día transforma en espacios premium de arte nocturno sin necesidad de electricidad o baterías.", 
-        en: "Elegant luminescence activated by the absence of light and recharged by natural/artificial light. Spectral purity evokes cryogenic technology and modern luxury. An invisible armor of light that adheres to any substrate, transforming spaces into premium nocturnal art without the need for electricity." 
-    },
-    "diamond.ice.li1": { es: "Cascos de yates y cubiertas VIP", en: "Yacht hulls and VIP decks" },
-    "diamond.ice.li2": { es: "Bordes de piscinas infinitas y espejos de agua", en: "Infinity pool edges and water mirrors" },
-    "diamond.ice.li3": { es: "Exteriores resplandecientes y llamativos", en: "Resplendent and striking exteriors" },
-    "diamond.ice.li4": { es: "Interiores de alto nivel y logotipos", en: "High-end interiors and logos" },
-    "diamond.ice.li5": { es: "Alta resistencia al salitre y exposición UV", en: "High saltpeter and UV resistance" },
-    "diamond.ice.data": { 
-        es: "Pureza óptica 100%. Integración estética imperceptible en seco.", 
-        en: "100% optical purity. Imperceptible aesthetic integration when dry." 
-    },
-    // NUEVAS KEYS PARA VERSIÓN EXPANDIDA
-    "diamond.hero.subtitle": { 
-        es: " ", 
-        en: " " 
-    },
-    "diamond.gallery.title": { 
-        es: "ARQUITECTURA LUMÍNICA", 
-        en: "LUMINOUS ARCHITECTURE" 
-    },
-    "diamond.gallery.subtitle": { 
-        es: "Aplicaciones reales de la tecnología Dual Spectrum", 
-        en: "Real applications of Dual Spectrum technology" 
-    },
-    "diamond.science.title": { 
-        es: "EL CICLO DE LUZ", 
-        en: "THE LIGHT CYCLE" 
-    },
-    "diamond.science.desc": { 
-        es: "Nanocristales fotoluminiscentes activados, almacenan energía fotónica y la liberan gradualmente en oscuridad total.", 
-        en: "Photoluminescent nanocrystals activated, store photonic energy and release it gradually in total darkness." 
-    },
-    "diamond.science.absorption.title": { es: "01. ABSORCIÓN", en: "01. ABSORPTION" },
-    "diamond.science.absorption": { 
-        es: "Luz natural o artificial activa los nanocristales en 5-30 minutos", 
-        en: "Natural or artificial light activates nanocrystals in 5-30 minutes" 
-    },
-    "diamond.science.storage.title": { es: "02. ALMACENAMIENTO", en: "02. STORAGE" },
-    "diamond.science.storage": { 
-        es: "Electrones excitados atrapados en niveles de energía metaestables", 
-        en: "Excited electrons trapped in metastable energy levels" 
-    },
-    "diamond.science.emission.title": { es: "03. EMISIÓN", en: "03. EMISSION" },
-    "diamond.science.emission": { 
-        es: "Liberación gradual de fotones (8-12 horas) en espectro 490nm o 520nm", 
-        en: "Gradual photon release (8-12 hours) in 490nm or 520nm spectrum" 
-    },
-    "diamond.specs.title": { 
-        es: "ESPECIFICACIONES ESPECTROSCÓPICAS", 
-        en: "SPECTROSCOPIC SPECIFICATIONS" 
-    },
-    "diamond.specs.feature": { es: "Característica", en: "Feature" },
-    "diamond.specs.wavelength": { es: "Longitud de onda", en: "Wavelength" },
-    "diamond.specs.day": { es: "Apariencia diurna", en: "Daytime appearance" },
-    "diamond.specs.charge": { es: "Tiempo de carga", en: "Charging time" },
-    "diamond.specs.duration": { es: "Duración emisión", en: "Emission duration" },
-    "diamond.specs.cycles": { es: "Ciclos de vida", en: "Lifespan cycles" },
-    "diamond.specs.salt": { es: "Resistencia salitre", en: "Saltpeter resistance" },// Valores específicos de la tabla
-    "diamond.specs.emerald.wavelength": { es: "520nm (Verde)", en: "520nm (Green)" },
-    "diamond.specs.ice.wavelength": { es: "490nm (Cian)", en: "490nm (Cyan)" },
-    "diamond.specs.emerald.day": { es: "Blanco neutro mate", en: "Matte neutral white" },
-    "diamond.specs.ice.day": { es: "Blanco azulado perla", en: "Pearl bluish white" },
-    "diamond.specs.emerald.charge": { es: "10 min (luz solar)", en: "10 min (sunlight)" },
-    "diamond.specs.ice.charge": { es: "15 min (luz solar)", en: "15 min (sunlight)" },
-    "diamond.specs.emerald.duration": { es: "10-12 horas", en: "10-12 hours" },
-    "diamond.specs.ice.duration": { es: "8-10 horas", en: "8-10 hours" },
-    "diamond.specs.emerald.cycles": { es: ">20 años", en: ">20 years" },
-    "diamond.specs.ice.cycles": { es: ">20 años", en: ">20 years" },
-    "diamond.cta.title": { 
-        es: "TU INFRAESTRUCTURA BRILLA SIN CABLES", 
-        en: "YOUR INFRASTRUCTURE GLOWS WITHOUT WIRES" 
-    },
-    "diamond.cta.subtitle": { 
-        es: "La única tecnología fotoluminiscente del Caribe con anclaje molecular Prisma Core.", 
-        en: "The only photoluminescent technology in the Caribbean with Prisma Core molecular anchoring." 
-    },
-    "diamond.cta.emerald": { 
-        es: "COTIZAR EMERALD CORE", 
-        en: "QUOTE EMERALD CORE" 
-    },
-    "diamond.cta.ice": { 
-        es: "COTIZAR ICE DIAMOND", 
-        en: "QUOTE ICE DIAMOND" 
-    },
-  
-    // ==========================================================
-    // FAQ / CONSULTAS TÉCNICAS
+    // FAQ
     // ==========================================================
     "faq.titulo": { es: "CONSULTAS TÉCNICAS", en: "TECHNICAL QUERIES" },
     "faq.subtitulo": {
@@ -2760,7 +3123,7 @@ const I18N = {
     "footer.sistemas": { es: "SISTEMAS", en: "SYSTEMS" },
     "footer.contacto": { es: "CONTACTO", en: "CONTACT" },
     "footer.tel": { es: "📱 +58 412 3521113", en: "📱 +58 412 3521113" },
-    "footer.email": { es: "✉️ qpcultra@gmail.com", en: "✉️ qpcultra@gmail.com" },
+    "footer.email": { es: "✉️ info@prismacore.tech", en: "✉️ info@prismacore.tech" },
     "footer.ubicacion": { es: "📍 Isla de Margarita, Venezuela", en: "📍 Isla de Margarita, Venezuela" },
     "footer.copyright": {
         es: "© 2026 Quantum Precision Core. Todos los derechos reservados.",
@@ -2786,47 +3149,34 @@ const I18NController = {
     currentLang: 'es',
     
     init() {
-        // Detectar idioma guardado o default español
         const savedLang = localStorage.getItem('prisma_lang');
         if (savedLang && (savedLang === 'es' || savedLang === 'en')) {
             this.currentLang = savedLang;
         }
-        
-        // Aplicar idioma inicial
         this.applyLanguage(this.currentLang);
-        
-        // Actualizar botones
         this.updateButtons();
+        this.initOfflineDetector();
+        this.initShareButton();
     },
     
     setLanguage(lang) {
         if (lang === this.currentLang) return;
-        
         this.currentLang = lang;
         localStorage.setItem('prisma_lang', lang);
-        
         this.applyLanguage(lang);
         this.updateButtons();
-        
-        // Disparar evento para otros componentes
         window.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang } }));
     },
     
     applyLanguage(lang) {
-        // Actualizar atributo lang del HTML
         document.documentElement.lang = lang;
-        
-        // Buscar todos los elementos con data-i18n
         document.querySelectorAll('[data-i18n]').forEach(element => {
             const key = element.getAttribute('data-i18n');
             const translation = this.getTranslation(key, lang);
-            
             if (translation !== null) {
                 element.innerHTML = translation;
             }
         });
-        
-        // Actualizar placeholders
         document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
             const key = element.getAttribute('data-i18n-placeholder');
             const translation = this.getTranslation(key, lang);
@@ -2846,77 +3196,109 @@ const I18NController = {
     updateButtons() {
         const btnEs = document.getElementById('btn-es');
         const btnEn = document.getElementById('btn-en');
-        
         if (btnEs) {
             const isActive = this.currentLang === 'es';
             btnEs.className = isActive
                 ? 'px-3 py-1.5 rounded text-xs font-bold bg-cyan-400 text-slate-900 transition-all shadow-lg shadow-cyan-400/30'
                 : 'px-3 py-1.5 rounded text-xs text-slate-400 hover:text-white transition-all hover:bg-white/10';
         }
-        
         if (btnEn) {
             const isActive = this.currentLang === 'en';
             btnEn.className = isActive
                 ? 'px-3 py-1.5 rounded text-xs font-bold bg-cyan-400 text-slate-900 transition-all shadow-lg shadow-cyan-400/30'
                 : 'px-3 py-1.5 rounded text-xs text-slate-400 hover:text-white transition-all hover:bg-white/10';
         }
+    },
+
+    initOfflineDetector() {
+        const indicator = document.getElementById('offline-indicator');
+        if (!indicator) return;
+        
+        function updateOnlineStatus() {
+            if (navigator.onLine) {
+                indicator.style.display = 'none';
+            } else {
+                indicator.style.display = 'block';
+            }
+        }
+        
+        window.addEventListener('online', updateOnlineStatus);
+        window.addEventListener('offline', updateOnlineStatus);
+        updateOnlineStatus();
+    },
+
+    initShareButton() {
+        const btn = document.getElementById('btnCompartir');
+        if (!btn) return;
+        
+        btn.addEventListener('click', async () => {
+            const shareData = {
+                title: this.currentLang === 'es' ? 'PRISMA CORE | Catálogo Técnico' : 'PRISMA CORE | Technical Catalog',
+                text: this.currentLang === 'es' ? 'Tecnología de ingeniería molecular para construcción' : 'Molecular engineering technology for construction',
+                url: window.location.href
+            };
+
+            if (navigator.share) {
+                try {
+                    await navigator.share(shareData);
+                } catch (err) {
+                    console.log('Share canceled');
+                }
+            } else {
+                navigator.clipboard.writeText(window.location.href).then(() => {
+                    alert(this.currentLang === 'es' ? 'Enlace copiado al portapapeles' : 'Link copied to clipboard');
+                });
+            }
+        });
     }
 };
 
-// ============================================================
-// INICIALIZACIÓN
-// ============================================================
-
-// Exponer I18NController globalmente
+// Exponer globalmente
 window.I18NController = I18NController;
-
-document.addEventListener('DOMContentLoaded', () => {
-    window.I18NController.init();
-});
-
-// Función global para botones HTML
-function setLanguage(lang) {
+window.setLanguage = function(lang) {
     if (window.I18NController) {
         window.I18NController.setLanguage(lang);
     }
-}
+};
 
-// Funciones del modal de inversores
-function openInvestorModal() {
+// Funciones del modal
+window.openInvestorModal = function() {
     const modal = document.getElementById('investorModal');
     if (modal) modal.style.display = 'block';
-}
+};
 
-function closeInvestorModal() {
+window.closeInvestorModal = function() {
     const modal = document.getElementById('investorModal');
     if (modal) modal.style.display = 'none';
-}
+};
 
-function checkInvestorPass(event) {
+window.checkInvestorPass = function(event) {
     event.preventDefault();
     const passField = document.getElementById('passField');
     const secretContent = document.getElementById('secretContent');
     const loginForm = document.getElementById('loginForm');
+    const lang = window.I18NController ? window.I18NController.currentLang : 'es';
 
     if (passField && passField.value === 'PrismaCore2026') {
         if (loginForm) loginForm.style.display = 'none';
         if (secretContent) secretContent.style.display = 'block';
     } else {
-        alert(window.I18NController.currentLang === 'es' ? 'Contraseña incorrecta' : 'Incorrect password');
+        alert(lang === 'es' ? 'Contraseña incorrecta' : 'Incorrect password');
     }
     return false;
-}
+};
 
-// Función para copiar fichas técnicas
-function copyFicha(elementId) {
+// Función para copiar fichas
+window.copyFicha = function(elementId) {
     const element = document.getElementById(elementId);
+    const lang = window.I18NController ? window.I18NController.currentLang : 'es';
+    
     if (element) {
         const text = element.innerText;
         navigator.clipboard.writeText(text).then(function() {
-            // Feedback visual
             const btn = element.parentElement.querySelector('.text-xs');
             const originalText = btn.innerText;
-            btn.innerText = window.I18NController.currentLang === 'es' ? '¡COPIADO!' : 'COPIED!';
+            btn.innerText = lang === 'es' ? '¡COPIADO!' : 'COPIED!';
             btn.classList.remove('bg-cyan-100', 'text-cyan-600');
             btn.classList.add('bg-green-100', 'text-green-600');
             setTimeout(function() {
@@ -2924,47 +3306,14 @@ function copyFicha(elementId) {
                 btn.classList.remove('bg-green-100', 'text-green-600');
                 btn.classList.add('bg-cyan-100', 'text-cyan-600');
             }, 2000);
-        }).catch(function(err) {
-            console.error('Error al copiar:', err);
-            alert(window.I18NController.currentLang === 'es' ? 'Error al copiar' : 'Copy error');
         });
-    }
-}
-</script>
-
-});
-<script>
-// Usamos window.onload para asegurar que toda la página cargó antes de buscar el botón
-window.onload = function() {
-    const boton = document.getElementById('btnCompartir');
-    
-    if (boton) {
-        console.log("Botón detectado correctamente");
-        
-        boton.addEventListener('click', async () => {
-            console.log("Clic detectado");
-            
-            if (navigator.share) {
-                try {
-                    await navigator.share({
-                        title: 'DIAMOND CORE | Sistema Fotoluminiscente',
-                        text: 'Te comparto el catálogo técnico de Diamond Core.',
-                        url: window.location.href
-                    });
-                } catch (err) {
-                    console.log("El usuario canceló o hubo un error:", err);
-                }
-            } else {
-                // Si estás en PC o navegador viejo, copiamos al portapapeles
-                navigator.clipboard.writeText(window.location.href).then(() => {
-                    alert("Enlace copiado al portapapeles. ¡Ya puedes pegarlo en WhatsApp!");
-                });
-            }
-        });
-    } else {
-        console.log("No se encontró el botón con el ID 'btnCompartir'");
     }
 };
+
+// Inicialización
+document.addEventListener('DOMContentLoaded', () => {
+    window.I18NController.init();
+});
 </script>
 </body>
 </html>
