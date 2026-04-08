@@ -2907,5 +2907,38 @@ document.getElementById('btnCompartir').addEventListener('click', async () => {
         alert('Enlace copiado al portapapeles. ¡Ya puedes pegarlo en WhatsApp!');
     }
 });
+   <script>
+// Usamos window.onload para asegurar que toda la página cargó antes de buscar el botón
+window.onload = function() {
+    const boton = document.getElementById('btnCompartir');
+    
+    if (boton) {
+        console.log("Botón detectado correctamente");
+        
+        boton.addEventListener('click', async () => {
+            console.log("Clic detectado");
+            
+            if (navigator.share) {
+                try {
+                    await navigator.share({
+                        title: 'DIAMOND CORE | Sistema Fotoluminiscente',
+                        text: 'Te comparto el catálogo técnico de Diamond Core.',
+                        url: window.location.href
+                    });
+                } catch (err) {
+                    console.log("El usuario canceló o hubo un error:", err);
+                }
+            } else {
+                // Si estás en PC o navegador viejo, copiamos al portapapeles
+                navigator.clipboard.writeText(window.location.href).then(() => {
+                    alert("Enlace copiado al portapapeles. ¡Ya puedes pegarlo en WhatsApp!");
+                });
+            }
+        });
+    } else {
+        console.log("No se encontró el botón con el ID 'btnCompartir'");
+    }
+};
+</script> 
 </body>
 </html>
